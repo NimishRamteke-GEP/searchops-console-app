@@ -1,0 +1,2072 @@
+5/5/2023 6:11:08 PM INFO: Select operation ny entering number
+5/5/2023 6:11:09 PM INFO: 1. Update Template
+5/5/2023 6:11:09 PM INFO: 2. Rename fields
+5/5/2023 6:11:09 PM ERROR: 9. Exit!
+5/5/2023 6:11:12 PM INFO: User Input: 2
+5/5/2023 6:11:12 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/5/2023 6:11:12 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/5/2023 6:11:15 PM INFO: User Input: dev
+5/5/2023 6:11:15 PM INFO: Enter index name
+5/5/2023 6:11:22 PM INFO: User Input: dm-idax-nimish
+5/5/2023 6:11:22 PM INFO: Enter ticket id
+5/5/2023 6:11:26 PM INFO: User Input: dm-idax-nimish
+5/5/2023 6:11:26 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idax-nimish, TicketId 1111
+5/5/2023 6:11:26 PM INFO: Enter confirm to proceed
+5/5/2023 6:11:38 PM INFO: User Input: confirm
+5/5/2023 6:11:38 PM INFO: taking backup for index: dm-idax-nimish. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638189070983333122_dm-idax-nimish-gbsrch-1111?wait_for_completion=true
+5/5/2023 6:11:39 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/5/2023 6:11:56 PM ERROR: Exception occured Object reference not set to an instance of an object.
+5/5/2023 6:27:28 PM INFO: Select operation ny entering number
+5/5/2023 6:27:28 PM INFO: 1. Update Template
+5/5/2023 6:27:28 PM INFO: 2. Rename fields
+5/5/2023 6:27:28 PM ERROR: 9. Exit!
+5/5/2023 6:27:52 PM INFO: User Input: 2
+5/5/2023 6:27:52 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/5/2023 6:27:52 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/5/2023 6:27:53 PM INFO: User Input: dev
+5/5/2023 6:27:53 PM INFO: Enter index name
+5/5/2023 6:27:59 PM INFO: User Input: dm-idx
+5/5/2023 6:27:59 PM INFO: Enter ticket id
+5/5/2023 6:28:02 PM INFO: User Input: dm-idx
+5/5/2023 6:28:02 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx, TicketId 1111
+5/5/2023 6:28:02 PM INFO: Enter confirm to proceed
+5/5/2023 6:28:06 PM INFO: User Input: confirm
+5/5/2023 6:28:06 PM INFO: taking backup for index: dm-idx. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638189080864061709_dm-idx-gbsrch-1111?wait_for_completion=true
+5/5/2023 6:28:07 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:40:45 PM INFO: Select operation ny entering number
+5/9/2023 2:40:46 PM INFO: 1. Update Template
+5/9/2023 2:40:46 PM INFO: 2. Rename fields
+5/9/2023 2:40:46 PM ERROR: 9. Exit!
+5/9/2023 2:44:34 PM INFO: Select operation ny entering number
+5/9/2023 2:44:34 PM INFO: 1. Update Template
+5/9/2023 2:44:34 PM INFO: 2. Rename fields
+5/9/2023 2:44:34 PM ERROR: 9. Exit!
+5/9/2023 2:45:46 PM INFO: User Input: 1
+5/9/2023 2:45:46 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:45:46 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 2:45:48 PM INFO: User Input: dev
+5/9/2023 2:45:48 PM INFO: Executing UpdateIndex Template
+5/9/2023 2:45:48 PM INFO: Total indices: 5
+5/9/2023 2:45:49 PM INFO: Script will executed for following indices on Environment: DEV
+5/9/2023 2:45:49 PM INFO: dm-idx-clm-v002
+5/9/2023 2:45:49 PM INFO: dm-idx-ticketmanagement-v002
+5/9/2023 2:45:49 PM INFO: dm-idx-ticketmanagement-v001
+5/9/2023 2:45:49 PM INFO: dm-idx-order_wg_030-v001
+5/9/2023 2:45:49 PM INFO: dm-idx-clm-v001
+5/9/2023 2:45:49 PM INFO: Update to version for template is: 1.2
+5/9/2023 2:45:49 PM INFO: Enter confirm to proceed
+5/9/2023 2:45:55 PM INFO: User Input: confirm
+5/9/2023 2:45:55 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:45:55 PM WARN: Fetching current index template for: dm-idx-clm-v002
+5/9/2023 2:45:57 PM INFO: Index template version: {"dm-idx-clm-v002":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.1"}}}}}
+5/9/2023 2:45:57 PM WARN: Index: dm-idx-clm-v002 has current version: 1.1 which is not equal to update version: 1.2. Hence doing the reindexing.
+5/9/2023 2:45:57 PM WARN: Fetching count for: dm-idx-clm-v002
+5/9/2023 2:45:58 PM INFO: Count response: {"count":985,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0}}
+5/9/2023 2:45:58 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:45:58 PM INFO: Executing script for index: dm-idx-clm-v002
+5/9/2023 2:45:58 PM WARN: Doing reindexing as document count is 985
+5/9/2023 2:45:58 PM INFO: Creating Index: dm-idx-clm-v002backup
+5/9/2023 2:45:59 PM INFO: Created Index: dm-idx-clm-v002backup
+5/9/2023 2:45:59 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:45:59 PM INFO: Created backup index: dm-idx-clm-v002backup
+5/9/2023 2:45:59 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:45:59 PM INFO: Reindexing data from dm-idx-clm-v002 to dm-idx-clm-v002backup
+5/9/2023 2:46:00 PM INFO: Straing Reindexing from dm-idx-clm-v002 -> dm-idx-clm-v002backup. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772980146
+5/9/2023 2:46:01 PM INFO: Reindexing from dm-idx-clm-v002 -> dm-idx-clm-v002backup
+5/9/2023 2:46:01 PM WARN: Total 985
+5/9/2023 2:46:01 PM WARN: Created 0
+5/9/2023 2:46:01 PM WARN: Updated 0
+5/9/2023 2:46:01 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:04 PM INFO: Reindexing from dm-idx-clm-v002 -> dm-idx-clm-v002backup
+5/9/2023 2:46:04 PM WARN: Total 985
+5/9/2023 2:46:04 PM WARN: Created 0
+5/9/2023 2:46:04 PM WARN: Updated 0
+5/9/2023 2:46:04 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:07 PM INFO: Reindexing from dm-idx-clm-v002 -> dm-idx-clm-v002backup
+5/9/2023 2:46:07 PM WARN: Total 985
+5/9/2023 2:46:07 PM WARN: Created 985
+5/9/2023 2:46:07 PM WARN: Updated 0
+5/9/2023 2:46:07 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:08 PM WARN: Reindexed data from dm-idx-clm-v002 to dm-idx-clm-v002backup
+5/9/2023 2:46:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:09 PM INFO: Aliases and Mappings: "{\"dm-idx-clm-v002\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.1\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 2:46:09 PM WARN: Deleting index: dm-idx-clm-v002
+5/9/2023 2:46:10 PM WARN: Deleted index: dm-idx-clm-v002
+5/9/2023 2:46:10 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:10 PM INFO: Creating Index: dm-idx-clm-v002
+5/9/2023 2:46:10 PM INFO: Created Index: dm-idx-clm-v002
+5/9/2023 2:46:10 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:10 PM INFO: Reindexing data from dm-idx-clm-v002backup to dm-idx-clm-v002
+5/9/2023 2:46:11 PM INFO: Straing Reindexing from dm-idx-clm-v002backup -> dm-idx-clm-v002. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772982568
+5/9/2023 2:46:11 PM INFO: Reindexing from dm-idx-clm-v002backup -> dm-idx-clm-v002
+5/9/2023 2:46:11 PM WARN: Total 985
+5/9/2023 2:46:11 PM WARN: Created 0
+5/9/2023 2:46:11 PM WARN: Updated 0
+5/9/2023 2:46:11 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:12 PM INFO: Reindexing from dm-idx-clm-v002backup -> dm-idx-clm-v002
+5/9/2023 2:46:12 PM WARN: Total 985
+5/9/2023 2:46:12 PM WARN: Created 0
+5/9/2023 2:46:12 PM WARN: Updated 0
+5/9/2023 2:46:12 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:13 PM INFO: Reindexing from dm-idx-clm-v002backup -> dm-idx-clm-v002
+5/9/2023 2:46:13 PM WARN: Total 985
+5/9/2023 2:46:13 PM WARN: Created 0
+5/9/2023 2:46:13 PM WARN: Updated 0
+5/9/2023 2:46:13 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:15 PM INFO: Reindexing from dm-idx-clm-v002backup -> dm-idx-clm-v002
+5/9/2023 2:46:15 PM WARN: Total 985
+5/9/2023 2:46:15 PM WARN: Created 0
+5/9/2023 2:46:15 PM WARN: Updated 0
+5/9/2023 2:46:15 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:16 PM INFO: Reindexing from dm-idx-clm-v002backup -> dm-idx-clm-v002
+5/9/2023 2:46:16 PM WARN: Total 985
+5/9/2023 2:46:16 PM WARN: Created 985
+5/9/2023 2:46:16 PM WARN: Updated 0
+5/9/2023 2:46:16 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:17 PM WARN: Reindexed data from dm-idx-clm-v002backup to dm-idx-clm-v002
+5/9/2023 2:46:17 PM WARN: Deleting index: dm-idx-clm-v002backup
+5/9/2023 2:46:17 PM WARN: Deleted index: dm-idx-clm-v002backup
+5/9/2023 2:46:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:17 PM INFO: Script Ended
+5/9/2023 2:46:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:17 PM WARN: Fetching current index template for: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:18 PM INFO: Index template version: {"dm-idx-ticketmanagement-v002":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.1"}}}}}
+5/9/2023 2:46:18 PM WARN: Index: dm-idx-ticketmanagement-v002 has current version: 1.1 which is not equal to update version: 1.2. Hence doing the reindexing.
+5/9/2023 2:46:18 PM WARN: Fetching count for: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:18 PM INFO: Count response: {"count":1103,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0}}
+5/9/2023 2:46:18 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:18 PM INFO: Executing script for index: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:18 PM WARN: Doing reindexing as document count is 1103
+5/9/2023 2:46:18 PM INFO: Creating Index: dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:19 PM INFO: Created Index: dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:19 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:19 PM INFO: Created backup index: dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:19 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:19 PM INFO: Reindexing data from dm-idx-ticketmanagement-v002 to dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:19 PM INFO: Straing Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772983436
+5/9/2023 2:46:19 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:19 PM WARN: Total 1103
+5/9/2023 2:46:19 PM WARN: Created 0
+5/9/2023 2:46:19 PM WARN: Updated 0
+5/9/2023 2:46:19 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:21 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:21 PM WARN: Total 1103
+5/9/2023 2:46:21 PM WARN: Created 0
+5/9/2023 2:46:21 PM WARN: Updated 0
+5/9/2023 2:46:21 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:22 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:22 PM WARN: Total 1103
+5/9/2023 2:46:22 PM WARN: Created 0
+5/9/2023 2:46:22 PM WARN: Updated 0
+5/9/2023 2:46:22 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:23 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:23 PM WARN: Total 1103
+5/9/2023 2:46:23 PM WARN: Created 0
+5/9/2023 2:46:23 PM WARN: Updated 0
+5/9/2023 2:46:23 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:24 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:24 PM WARN: Total 1103
+5/9/2023 2:46:24 PM WARN: Created 0
+5/9/2023 2:46:24 PM WARN: Updated 0
+5/9/2023 2:46:24 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:26 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:26 PM WARN: Total 1103
+5/9/2023 2:46:26 PM WARN: Created 1000
+5/9/2023 2:46:26 PM WARN: Updated 0
+5/9/2023 2:46:26 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:27 PM INFO: Reindexing from dm-idx-ticketmanagement-v002 -> dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:27 PM WARN: Total 1103
+5/9/2023 2:46:27 PM WARN: Created 1103
+5/9/2023 2:46:27 PM WARN: Updated 0
+5/9/2023 2:46:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:28 PM WARN: Reindexed data from dm-idx-ticketmanagement-v002 to dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:28 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:28 PM INFO: Aliases and Mappings: "{\"dm-idx-ticketmanagement-v002\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.1\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 2:46:28 PM WARN: Deleting index: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:29 PM WARN: Deleted index: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:29 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:29 PM INFO: Creating Index: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:29 PM INFO: Created Index: dm-idx-ticketmanagement-v002
+5/9/2023 2:46:29 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:29 PM INFO: Reindexing data from dm-idx-ticketmanagement-v002backup to dm-idx-ticketmanagement-v002
+5/9/2023 2:46:30 PM INFO: Straing Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772985044
+5/9/2023 2:46:30 PM INFO: Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002
+5/9/2023 2:46:30 PM WARN: Total 1103
+5/9/2023 2:46:30 PM WARN: Created 0
+5/9/2023 2:46:30 PM WARN: Updated 0
+5/9/2023 2:46:30 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:31 PM INFO: Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002
+5/9/2023 2:46:31 PM WARN: Total 1103
+5/9/2023 2:46:31 PM WARN: Created 0
+5/9/2023 2:46:31 PM WARN: Updated 0
+5/9/2023 2:46:31 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:32 PM INFO: Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002
+5/9/2023 2:46:32 PM WARN: Total 1103
+5/9/2023 2:46:32 PM WARN: Created 0
+5/9/2023 2:46:32 PM WARN: Updated 0
+5/9/2023 2:46:32 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:34 PM INFO: Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002
+5/9/2023 2:46:34 PM WARN: Total 1103
+5/9/2023 2:46:34 PM WARN: Created 0
+5/9/2023 2:46:34 PM WARN: Updated 0
+5/9/2023 2:46:34 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:35 PM INFO: Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002
+5/9/2023 2:46:35 PM WARN: Total 1103
+5/9/2023 2:46:35 PM WARN: Created 0
+5/9/2023 2:46:35 PM WARN: Updated 0
+5/9/2023 2:46:35 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:36 PM INFO: Reindexing from dm-idx-ticketmanagement-v002backup -> dm-idx-ticketmanagement-v002
+5/9/2023 2:46:36 PM WARN: Total 1103
+5/9/2023 2:46:36 PM WARN: Created 1103
+5/9/2023 2:46:36 PM WARN: Updated 0
+5/9/2023 2:46:36 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:37 PM WARN: Reindexed data from dm-idx-ticketmanagement-v002backup to dm-idx-ticketmanagement-v002
+5/9/2023 2:46:37 PM WARN: Deleting index: dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:38 PM WARN: Deleted index: dm-idx-ticketmanagement-v002backup
+5/9/2023 2:46:38 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:38 PM INFO: Script Ended
+5/9/2023 2:46:38 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:38 PM WARN: Fetching current index template for: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:38 PM INFO: Index template version: {"dm-idx-ticketmanagement-v001":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.1"}}}}}
+5/9/2023 2:46:38 PM WARN: Index: dm-idx-ticketmanagement-v001 has current version: 1.1 which is not equal to update version: 1.2. Hence doing the reindexing.
+5/9/2023 2:46:38 PM WARN: Fetching count for: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:38 PM INFO: Count response: {"count":1132,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0}}
+5/9/2023 2:46:38 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:38 PM INFO: Executing script for index: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:38 PM WARN: Doing reindexing as document count is 1132
+5/9/2023 2:46:38 PM INFO: Creating Index: dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:39 PM INFO: Created Index: dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:39 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:39 PM INFO: Created backup index: dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:39 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:39 PM INFO: Reindexing data from dm-idx-ticketmanagement-v001 to dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:39 PM INFO: Straing Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772987400
+5/9/2023 2:46:40 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:40 PM WARN: Total 1132
+5/9/2023 2:46:40 PM WARN: Created 0
+5/9/2023 2:46:40 PM WARN: Updated 0
+5/9/2023 2:46:40 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:41 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:41 PM WARN: Total 1132
+5/9/2023 2:46:41 PM WARN: Created 0
+5/9/2023 2:46:41 PM WARN: Updated 0
+5/9/2023 2:46:41 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:42 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:42 PM WARN: Total 1132
+5/9/2023 2:46:42 PM WARN: Created 0
+5/9/2023 2:46:42 PM WARN: Updated 0
+5/9/2023 2:46:42 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:44 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:44 PM WARN: Total 1132
+5/9/2023 2:46:44 PM WARN: Created 0
+5/9/2023 2:46:44 PM WARN: Updated 0
+5/9/2023 2:46:44 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:45 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:45 PM WARN: Total 1132
+5/9/2023 2:46:45 PM WARN: Created 0
+5/9/2023 2:46:45 PM WARN: Updated 0
+5/9/2023 2:46:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:46 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:46 PM WARN: Total 1132
+5/9/2023 2:46:46 PM WARN: Created 0
+5/9/2023 2:46:46 PM WARN: Updated 0
+5/9/2023 2:46:46 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:47 PM INFO: Reindexing from dm-idx-ticketmanagement-v001 -> dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:47 PM WARN: Total 1132
+5/9/2023 2:46:47 PM WARN: Created 1132
+5/9/2023 2:46:47 PM WARN: Updated 0
+5/9/2023 2:46:47 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:48 PM WARN: Reindexed data from dm-idx-ticketmanagement-v001 to dm-idx-ticketmanagement-v001backup
+5/9/2023 2:46:48 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:49 PM INFO: Aliases and Mappings: "{\"dm-idx-ticketmanagement-v001\":{\"aliases\":{\"developerdomain_1663751615\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1663751615\"}}}]}}},\"developerdomain_1679299234\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679299234\"}}}]}}}},\"mappings\":{\"_meta\":{\"developerdomain_1679299234\":{\"appGroupName\":\"TicketManagement\",\"appGroupId\":\"8ebda0df-e444-4a76-b998-1191b94a3978\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_1776307e-31e7-441c-93e2-a8797ddeeae3\",\"publishedDate\":\"3/20/2023 8:07:34 AM\",\"esTypeName\":\"ticketSetup\",\"esTypeCode\":\"1679299234\",\"buyerPartnerName\":\"developerdomain\"},\"esMetadata\":{\"esTemplateVersion\":\"1.1\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 2:46:49 PM WARN: Deleting index: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:49 PM WARN: Deleted index: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:49 PM INFO: Creating Index: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:50 PM INFO: Created Index: dm-idx-ticketmanagement-v001
+5/9/2023 2:46:50 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:50 PM INFO: Reindexing data from dm-idx-ticketmanagement-v001backup to dm-idx-ticketmanagement-v001
+5/9/2023 2:46:51 PM INFO: Straing Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772988524
+5/9/2023 2:46:51 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:51 PM WARN: Total 1132
+5/9/2023 2:46:51 PM WARN: Created 0
+5/9/2023 2:46:51 PM WARN: Updated 0
+5/9/2023 2:46:51 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:52 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:52 PM WARN: Total 1132
+5/9/2023 2:46:52 PM WARN: Created 0
+5/9/2023 2:46:52 PM WARN: Updated 0
+5/9/2023 2:46:52 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:53 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:53 PM WARN: Total 1132
+5/9/2023 2:46:53 PM WARN: Created 0
+5/9/2023 2:46:53 PM WARN: Updated 0
+5/9/2023 2:46:53 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:55 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:55 PM WARN: Total 1132
+5/9/2023 2:46:55 PM WARN: Created 0
+5/9/2023 2:46:55 PM WARN: Updated 0
+5/9/2023 2:46:55 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:56 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:56 PM WARN: Total 1132
+5/9/2023 2:46:56 PM WARN: Created 0
+5/9/2023 2:46:56 PM WARN: Updated 0
+5/9/2023 2:46:56 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:57 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:57 PM WARN: Total 1132
+5/9/2023 2:46:57 PM WARN: Created 1000
+5/9/2023 2:46:57 PM WARN: Updated 0
+5/9/2023 2:46:57 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:46:59 PM INFO: Reindexing from dm-idx-ticketmanagement-v001backup -> dm-idx-ticketmanagement-v001
+5/9/2023 2:46:59 PM WARN: Total 1132
+5/9/2023 2:46:59 PM WARN: Created 1132
+5/9/2023 2:46:59 PM WARN: Updated 0
+5/9/2023 2:46:59 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:00 PM WARN: Reindexed data from dm-idx-ticketmanagement-v001backup to dm-idx-ticketmanagement-v001
+5/9/2023 2:47:00 PM WARN: Deleting index: dm-idx-ticketmanagement-v001backup
+5/9/2023 2:47:01 PM WARN: Deleted index: dm-idx-ticketmanagement-v001backup
+5/9/2023 2:47:01 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:01 PM INFO: Script Ended
+5/9/2023 2:47:01 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:02 PM WARN: Fetching current index template for: dm-idx-order_wg_030-v001
+5/9/2023 2:47:04 PM INFO: Index template version: {"dm-idx-order_wg_030-v001":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.0"}}}}}
+5/9/2023 2:47:04 PM WARN: Index: dm-idx-order_wg_030-v001 has current version: 1.0 which is not equal to update version: 1.2. Hence doing the reindexing.
+5/9/2023 2:47:04 PM WARN: Fetching count for: dm-idx-order_wg_030-v001
+5/9/2023 2:47:06 PM INFO: Count response: {"count":293,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0}}
+5/9/2023 2:47:06 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:06 PM INFO: Executing script for index: dm-idx-order_wg_030-v001
+5/9/2023 2:47:06 PM WARN: Doing reindexing as document count is 293
+5/9/2023 2:47:06 PM INFO: Creating Index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:08 PM INFO: Created Index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:08 PM INFO: Created backup index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:08 PM INFO: Reindexing data from dm-idx-order_wg_030-v001 to dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:09 PM INFO: Straing Reindexing from dm-idx-order_wg_030-v001 -> dm-idx-order_wg_030-v001backup. TaskId: qjNkF2cKRQGNhJYDYj7cRA:772992186
+5/9/2023 2:47:09 PM INFO: Reindexing from dm-idx-order_wg_030-v001 -> dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:09 PM WARN: Total 293
+5/9/2023 2:47:09 PM WARN: Created 0
+5/9/2023 2:47:09 PM WARN: Updated 0
+5/9/2023 2:47:09 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:17 PM INFO: Reindexing from dm-idx-order_wg_030-v001 -> dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:17 PM WARN: Total 293
+5/9/2023 2:47:17 PM WARN: Created 293
+5/9/2023 2:47:17 PM WARN: Updated 0
+5/9/2023 2:47:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:18 PM WARN: Reindexed data from dm-idx-order_wg_030-v001 to dm-idx-order_wg_030-v001backup
+5/9/2023 2:47:18 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:26 PM INFO: Aliases and Mappings: "{\"dm-idx-order_wg_030-v001\":{\"aliases\":{\"developerdomain_1661326093_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661326093_orderlineinfo\"}}}]}}},\"developerdomain_1661326093_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661326093_orderrequestschedules\"}}}]}}},\"developerdomain_1661327472_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661327472_orderlineinfo\"}}}]}}},\"developerdomain_1661327472_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661327472_orderrequestschedules\"}}}]}}},\"developerdomain_1662643679_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1662643679_orderlineinfo\"}}}]}}},\"developerdomain_1662643679_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1662643679_orderrequestschedules\"}}}]}}},\"developerdomain_1665481763\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1665481763\"}}}]}}},\"developerdomain_1665679308\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1665679308\"}}}]}}},\"developerdomain_1675423957\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1675423957\"}}}]}}},\"developerdomain_1676878376\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676878376\"}}}]}}},\"developerdomain_1676878376_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676878376_orderlineinfo\"}}}]}}},\"developerdomain_1676878376_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676878376_orderrequestschedules\"}}}]}}},\"developerdomain_1677071456\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1677071456\"}}}]}}},\"developerdomain_1679479938\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679479938\"}}}]}}},\"developerdomain_1679479938_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679479938_orderlineinfo\"}}}]}}},\"developerdomain_1679479938_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679479938_orderrequestschedules\"}}}]}}},\"petronas_1662643679\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"70021790\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1662643679\"}}}]}}},\"petronas_1673877424\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"70021790\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1673877424\"}}}]}}}},\"mappings\":{\"_meta\":{\"developerdomain_1676878376_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"SubTypeId\":\"\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_495f9086-eb14-4d56-be95-f82a8902b59b\",\"publishedDate\":\"5/8/2023 3:44:25 PM\",\"esTypeName\":\"blanketOrder\",\"esTypeCode\":\"1676878376\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1661326093_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_46ebe5d5-12c8-44ce-9f83-50acc3d6a42f\",\"publishedDate\":\"3/17/2023 10:20:50 AM\",\"esTypeName\":\"customerOrder\",\"esTypeCode\":\"1661326093\",\"buyerPartnerName\":\"developerdomain\"},\"esMetadata\":{\"esTemplateVersion\":\"1.0\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"},\"developerdomain_1661327472_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_90fb0d87-aaf7-445f-85dd-a1c0f31dbac4\",\"publishedDate\":\"3/17/2023 10:36:40 AM\",\"esTypeName\":\"supplierOrder\",\"esTypeCode\":\"1661327472\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1661326093_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_baeea116-15d2-426a-a761-d170ef66e60a\",\"publishedDate\":\"3/17/2023 10:20:32 AM\",\"esTypeName\":\"customerOrder\",\"esTypeCode\":\"1661326093\",\"buyerPartnerName\":\"developerdomain\"},\"petronas_1662643679\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":70021790,\"correlationId\":\"662_b23ae6cd-022e-4eae-81f3-38b69164ed49\",\"publishedDate\":\"3/9/2023 9:12:38 PM\",\"esTypeName\":\"order_base_030\",\"esTypeCode\":\"1662643679\",\"buyerPartnerName\":\"petronas\"},\"petronas_1673877424\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":70021790,\"correlationId\":\"662_0cf8a592-8bff-408b-84b2-593ff264efc9\",\"publishedDate\":\"4/5/2023 11:11:02 AM\",\"esTypeName\":\"Rules_Integration\",\"esTypeCode\":\"1673877424\",\"buyerPartnerName\":\"petronas\"},\"developerdomain_1679479938_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_d2d6b25f-2182-4d58-9898-8cb7960718d0\",\"publishedDate\":\"3/23/2023 7:53:30 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1679479938\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1675423957\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_e2591864-282f-4392-bf21-63b1a89fd6c0\",\"publishedDate\":\"3/24/2023 10:47:24 AM\",\"esTypeName\":\"rules-integration-test\",\"esTypeCode\":\"1675423957\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1662643679_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_cebfe03a-2c46-4faf-8192-9a29f0c4bc19\",\"publishedDate\":\"3/16/2023 9:50:17 AM\",\"esTypeName\":\"order_base_030\",\"esTypeCode\":\"1662643679\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1677071456\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_c992c1fe-d668-4bdc-9fb4-5d6fc4f83db2\",\"publishedDate\":\"3/21/2023 10:55:56 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1677071456\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1662643679_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_c5d6c0b4-ef30-4992-9795-90c27e9c58c7\",\"publishedDate\":\"3/16/2023 10:38:30 AM\",\"esTypeName\":\"order_base_030\",\"esTypeCode\":\"1662643679\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1661327472_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_2fe4b688-dab9-4ef1-90cc-226726edf277\",\"publishedDate\":\"3/17/2023 10:30:11 AM\",\"esTypeName\":\"supplierOrder\",\"esTypeCode\":\"1661327472\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1679479938\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_aaf061bc-d7d0-43b3-8f38-fed568333ffc\",\"publishedDate\":\"3/23/2023 7:53:13 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1679479938\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1676878376_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"SubTypeId\":\"\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_194ad4a4-d883-44b9-8328-f6ddf2a457b6\",\"publishedDate\":\"5/8/2023 3:44:45 PM\",\"esTypeName\":\"blanketOrder\",\"esTypeCode\":\"1676878376\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1676878376\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_79b2c5b6-392c-4ba4-88de-00df5401ba7f\",\"publishedDate\":\"3/20/2023 12:37:04 PM\",\"esTypeName\":\"blanketOrder\",\"esTypeCode\":\"1676878376\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1665481763\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_6f1a1964-9ee8-49f6-8ef3-cf9fbe0241ed\",\"publishedDate\":\"4/10/2023 3:53:07 PM\",\"esTypeName\":\"test\",\"esTypeCode\":\"1665481763\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1679479938_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_4e3d7be0-0512-490d-b73b-b87856218784\",\"publishedDate\":\"3/23/2023 7:53:49 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1679479938\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1665679308\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_490e1dde-7b23-4383-8a68-af529664dbfe\",\"publishedDate\":\"4/10/2023 4:05:34 PM\",\"esTypeName\":\"TestModuleCollectiveRem\",\"esTypeCode\":\"1665679308\",\"buyerPartnerName\":\"developerdomain\"}}}}}"
+5/9/2023 2:47:26 PM WARN: Deleting index: dm-idx-order_wg_030-v001
+5/9/2023 2:47:38 PM WARN: Deleted index: dm-idx-order_wg_030-v001
+5/9/2023 2:47:38 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:47:38 PM INFO: Creating Index: dm-idx-order_wg_030-v001
+5/9/2023 2:49:18 PM ERROR: Exception occured while updating template: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+5/9/2023 2:49:18 PM ERROR: Exception occured The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+5/9/2023 2:59:15 PM INFO: Select operation ny entering number
+5/9/2023 2:59:15 PM INFO: 1. Update Template
+5/9/2023 2:59:15 PM INFO: 2. Rename fields
+5/9/2023 2:59:16 PM ERROR: 9. Exit!
+5/9/2023 2:59:19 PM INFO: User Input: 1
+5/9/2023 2:59:19 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:19 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 2:59:20 PM INFO: User Input: dev
+5/9/2023 2:59:20 PM INFO: Executing UpdateIndex Template
+5/9/2023 2:59:20 PM INFO: Total indices: 5
+5/9/2023 2:59:22 PM INFO: Script will executed for following indices on Environment: DEV
+5/9/2023 2:59:22 PM INFO: dm-idx-clm-v002
+5/9/2023 2:59:22 PM INFO: dm-idx-ticketmanagement-v002
+5/9/2023 2:59:22 PM INFO: dm-idx-ticketmanagement-v001
+5/9/2023 2:59:22 PM INFO: dm-idx-order_wg_030-v001
+5/9/2023 2:59:22 PM INFO: dm-idx-clm-v001
+5/9/2023 2:59:22 PM INFO: Update to version for template is: 1.2
+5/9/2023 2:59:22 PM INFO: Enter confirm to proceed
+5/9/2023 2:59:37 PM INFO: User Input: confirm
+5/9/2023 2:59:37 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:37 PM WARN: Fetching current index template for: dm-idx-clm-v002
+5/9/2023 2:59:38 PM INFO: Index template version: {"dm-idx-clm-v002":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.2"}}}}}
+5/9/2023 2:59:38 PM WARN: Index: dm-idx-clm-v002 has current version: 1.2 which is equal to update version: 1.2. Hence skiping the reindexing.
+5/9/2023 2:59:38 PM WARN: Fetching current index template for: dm-idx-ticketmanagement-v002
+5/9/2023 2:59:39 PM INFO: Index template version: {"dm-idx-ticketmanagement-v002":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.2"}}}}}
+5/9/2023 2:59:39 PM WARN: Index: dm-idx-ticketmanagement-v002 has current version: 1.2 which is equal to update version: 1.2. Hence skiping the reindexing.
+5/9/2023 2:59:39 PM WARN: Fetching current index template for: dm-idx-ticketmanagement-v001
+5/9/2023 2:59:39 PM INFO: Index template version: {"dm-idx-ticketmanagement-v001":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.2"}}}}}
+5/9/2023 2:59:39 PM WARN: Index: dm-idx-ticketmanagement-v001 has current version: 1.2 which is equal to update version: 1.2. Hence skiping the reindexing.
+5/9/2023 2:59:39 PM WARN: Fetching current index template for: dm-idx-order_wg_030-v001
+5/9/2023 2:59:39 PM INFO: Index template version: {"dm-idx-order_wg_030-v001":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.0"}}}}}
+5/9/2023 2:59:39 PM WARN: Index: dm-idx-order_wg_030-v001 has current version: 1.0 which is not equal to update version: 1.2. Hence doing the reindexing.
+5/9/2023 2:59:39 PM WARN: Fetching count for: dm-idx-order_wg_030-v001
+5/9/2023 2:59:39 PM INFO: Count response: {"count":293,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0}}
+5/9/2023 2:59:39 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:39 PM INFO: Executing script for index: dm-idx-order_wg_030-v001
+5/9/2023 2:59:39 PM WARN: Doing reindexing as document count is 293
+5/9/2023 2:59:39 PM INFO: Creating Index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:40 PM INFO: Created Index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:40 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:40 PM INFO: Created backup index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:40 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:40 PM INFO: Reindexing data from dm-idx-order_wg_030-v001 to dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:40 PM INFO: Straing Reindexing from dm-idx-order_wg_030-v001 -> dm-idx-order_wg_030-v001backup. TaskId: jCT4dATpSXmAWpL8-7KzGg:406158313
+5/9/2023 2:59:41 PM INFO: Reindexing from dm-idx-order_wg_030-v001 -> dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:41 PM WARN: Total 293
+5/9/2023 2:59:41 PM WARN: Created 0
+5/9/2023 2:59:41 PM WARN: Updated 0
+5/9/2023 2:59:41 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:42 PM INFO: Reindexing from dm-idx-order_wg_030-v001 -> dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:42 PM WARN: Total 293
+5/9/2023 2:59:42 PM WARN: Created 293
+5/9/2023 2:59:42 PM WARN: Updated 0
+5/9/2023 2:59:42 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:43 PM WARN: Reindexed data from dm-idx-order_wg_030-v001 to dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:43 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:43 PM INFO: Aliases and Mappings: "{\"dm-idx-order_wg_030-v001\":{\"aliases\":{\"developerdomain_1661326093_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661326093_orderlineinfo\"}}}]}}},\"developerdomain_1661326093_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661326093_orderrequestschedules\"}}}]}}},\"developerdomain_1661327472_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661327472_orderlineinfo\"}}}]}}},\"developerdomain_1661327472_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1661327472_orderrequestschedules\"}}}]}}},\"developerdomain_1662643679_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1662643679_orderlineinfo\"}}}]}}},\"developerdomain_1662643679_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1662643679_orderrequestschedules\"}}}]}}},\"developerdomain_1665481763\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1665481763\"}}}]}}},\"developerdomain_1665679308\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1665679308\"}}}]}}},\"developerdomain_1675423957\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1675423957\"}}}]}}},\"developerdomain_1676878376\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676878376\"}}}]}}},\"developerdomain_1676878376_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676878376_orderlineinfo\"}}}]}}},\"developerdomain_1676878376_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676878376_orderrequestschedules\"}}}]}}},\"developerdomain_1677071456\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1677071456\"}}}]}}},\"developerdomain_1679479938\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679479938\"}}}]}}},\"developerdomain_1679479938_orderlineinfo\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679479938_orderlineinfo\"}}}]}}},\"developerdomain_1679479938_orderrequestschedules\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1679479938_orderrequestschedules\"}}}]}}},\"petronas_1662643679\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"70021790\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1662643679\"}}}]}}},\"petronas_1673877424\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"70021790\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1673877424\"}}}]}}}},\"mappings\":{\"_meta\":{\"developerdomain_1676878376_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"SubTypeId\":\"\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_495f9086-eb14-4d56-be95-f82a8902b59b\",\"publishedDate\":\"5/8/2023 3:44:25 PM\",\"esTypeName\":\"blanketOrder\",\"esTypeCode\":\"1676878376\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1661326093_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_46ebe5d5-12c8-44ce-9f83-50acc3d6a42f\",\"publishedDate\":\"3/17/2023 10:20:50 AM\",\"esTypeName\":\"customerOrder\",\"esTypeCode\":\"1661326093\",\"buyerPartnerName\":\"developerdomain\"},\"esMetadata\":{\"esTemplateVersion\":\"1.0\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"},\"developerdomain_1661327472_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_90fb0d87-aaf7-445f-85dd-a1c0f31dbac4\",\"publishedDate\":\"3/17/2023 10:36:40 AM\",\"esTypeName\":\"supplierOrder\",\"esTypeCode\":\"1661327472\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1661326093_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_baeea116-15d2-426a-a761-d170ef66e60a\",\"publishedDate\":\"3/17/2023 10:20:32 AM\",\"esTypeName\":\"customerOrder\",\"esTypeCode\":\"1661326093\",\"buyerPartnerName\":\"developerdomain\"},\"petronas_1662643679\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":70021790,\"correlationId\":\"662_b23ae6cd-022e-4eae-81f3-38b69164ed49\",\"publishedDate\":\"3/9/2023 9:12:38 PM\",\"esTypeName\":\"order_base_030\",\"esTypeCode\":\"1662643679\",\"buyerPartnerName\":\"petronas\"},\"petronas_1673877424\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":70021790,\"correlationId\":\"662_0cf8a592-8bff-408b-84b2-593ff264efc9\",\"publishedDate\":\"4/5/2023 11:11:02 AM\",\"esTypeName\":\"Rules_Integration\",\"esTypeCode\":\"1673877424\",\"buyerPartnerName\":\"petronas\"},\"developerdomain_1679479938_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_d2d6b25f-2182-4d58-9898-8cb7960718d0\",\"publishedDate\":\"3/23/2023 7:53:30 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1679479938\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1675423957\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_e2591864-282f-4392-bf21-63b1a89fd6c0\",\"publishedDate\":\"3/24/2023 10:47:24 AM\",\"esTypeName\":\"rules-integration-test\",\"esTypeCode\":\"1675423957\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1662643679_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_cebfe03a-2c46-4faf-8192-9a29f0c4bc19\",\"publishedDate\":\"3/16/2023 9:50:17 AM\",\"esTypeName\":\"order_base_030\",\"esTypeCode\":\"1662643679\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1677071456\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_c992c1fe-d668-4bdc-9fb4-5d6fc4f83db2\",\"publishedDate\":\"3/21/2023 10:55:56 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1677071456\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1662643679_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_c5d6c0b4-ef30-4992-9795-90c27e9c58c7\",\"publishedDate\":\"3/16/2023 10:38:30 AM\",\"esTypeName\":\"order_base_030\",\"esTypeCode\":\"1662643679\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1661327472_orderlineinfo\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderLineInfo\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_2fe4b688-dab9-4ef1-90cc-226726edf277\",\"publishedDate\":\"3/17/2023 10:30:11 AM\",\"esTypeName\":\"supplierOrder\",\"esTypeCode\":\"1661327472\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1679479938\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_aaf061bc-d7d0-43b3-8f38-fed568333ffc\",\"publishedDate\":\"3/23/2023 7:53:13 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1679479938\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1676878376_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"SubTypeId\":\"\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_194ad4a4-d883-44b9-8328-f6ddf2a457b6\",\"publishedDate\":\"5/8/2023 3:44:45 PM\",\"esTypeName\":\"blanketOrder\",\"esTypeCode\":\"1676878376\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1676878376\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_79b2c5b6-392c-4ba4-88de-00df5401ba7f\",\"publishedDate\":\"3/20/2023 12:37:04 PM\",\"esTypeName\":\"blanketOrder\",\"esTypeCode\":\"1676878376\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1665481763\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_6f1a1964-9ee8-49f6-8ef3-cf9fbe0241ed\",\"publishedDate\":\"4/10/2023 3:53:07 PM\",\"esTypeName\":\"test\",\"esTypeCode\":\"1665481763\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1679479938_orderrequestschedules\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":\"orderRequestSchedules\",\"buyerPartnerCode\":20210511,\"correlationId\":\"662_4e3d7be0-0512-490d-b73b-b87856218784\",\"publishedDate\":\"3/23/2023 7:53:49 AM\",\"esTypeName\":\"returnOrder\",\"esTypeCode\":\"1679479938\",\"buyerPartnerName\":\"developerdomain\"},\"developerdomain_1665679308\":{\"appGroupName\":\"order_wg_030\",\"appGroupId\":\"0b138999-3ee1-46cb-a448-ca0f0ac3d86b\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_490e1dde-7b23-4383-8a68-af529664dbfe\",\"publishedDate\":\"4/10/2023 4:05:34 PM\",\"esTypeName\":\"TestModuleCollectiveRem\",\"esTypeCode\":\"1665679308\",\"buyerPartnerName\":\"developerdomain\"}}}}}"
+5/9/2023 2:59:43 PM WARN: Deleting index: dm-idx-order_wg_030-v001
+5/9/2023 2:59:44 PM WARN: Deleted index: dm-idx-order_wg_030-v001
+5/9/2023 2:59:44 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:44 PM INFO: Creating Index: dm-idx-order_wg_030-v001
+5/9/2023 2:59:45 PM INFO: Created Index: dm-idx-order_wg_030-v001
+5/9/2023 2:59:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:45 PM INFO: Reindexing data from dm-idx-order_wg_030-v001backup to dm-idx-order_wg_030-v001
+5/9/2023 2:59:45 PM INFO: Straing Reindexing from dm-idx-order_wg_030-v001backup -> dm-idx-order_wg_030-v001. TaskId: jCT4dATpSXmAWpL8-7KzGg:406158991
+5/9/2023 2:59:45 PM INFO: Reindexing from dm-idx-order_wg_030-v001backup -> dm-idx-order_wg_030-v001
+5/9/2023 2:59:45 PM WARN: Total 293
+5/9/2023 2:59:45 PM WARN: Created 0
+5/9/2023 2:59:45 PM WARN: Updated 0
+5/9/2023 2:59:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:47 PM INFO: Reindexing from dm-idx-order_wg_030-v001backup -> dm-idx-order_wg_030-v001
+5/9/2023 2:59:47 PM WARN: Total 293
+5/9/2023 2:59:47 PM WARN: Created 293
+5/9/2023 2:59:47 PM WARN: Updated 0
+5/9/2023 2:59:47 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:48 PM WARN: Reindexed data from dm-idx-order_wg_030-v001backup to dm-idx-order_wg_030-v001
+5/9/2023 2:59:48 PM WARN: Deleting index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:48 PM WARN: Deleted index: dm-idx-order_wg_030-v001backup
+5/9/2023 2:59:48 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:48 PM INFO: Script Ended
+5/9/2023 2:59:48 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:48 PM WARN: Fetching current index template for: dm-idx-clm-v001
+5/9/2023 2:59:48 PM INFO: Index template version: {"dm-idx-clm-v001":{"mappings":{"_meta":{"esMetadata":{"esTemplateVersion":"1.0"}}}}}
+5/9/2023 2:59:48 PM WARN: Index: dm-idx-clm-v001 has current version: 1.0 which is not equal to update version: 1.2. Hence doing the reindexing.
+5/9/2023 2:59:48 PM WARN: Fetching count for: dm-idx-clm-v001
+5/9/2023 2:59:49 PM INFO: Count response: {"count":1270,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0}}
+5/9/2023 2:59:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:49 PM INFO: Executing script for index: dm-idx-clm-v001
+5/9/2023 2:59:49 PM WARN: Doing reindexing as document count is 1270
+5/9/2023 2:59:49 PM INFO: Creating Index: dm-idx-clm-v001backup
+5/9/2023 2:59:49 PM INFO: Created Index: dm-idx-clm-v001backup
+5/9/2023 2:59:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:49 PM INFO: Created backup index: dm-idx-clm-v001backup
+5/9/2023 2:59:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:49 PM INFO: Reindexing data from dm-idx-clm-v001 to dm-idx-clm-v001backup
+5/9/2023 2:59:50 PM INFO: Straing Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup. TaskId: jCT4dATpSXmAWpL8-7KzGg:406159768
+5/9/2023 2:59:50 PM INFO: Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup
+5/9/2023 2:59:50 PM WARN: Total 1270
+5/9/2023 2:59:50 PM WARN: Created 0
+5/9/2023 2:59:50 PM WARN: Updated 0
+5/9/2023 2:59:50 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:51 PM INFO: Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup
+5/9/2023 2:59:51 PM WARN: Total 1270
+5/9/2023 2:59:51 PM WARN: Created 0
+5/9/2023 2:59:51 PM WARN: Updated 0
+5/9/2023 2:59:51 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:53 PM INFO: Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup
+5/9/2023 2:59:53 PM WARN: Total 1270
+5/9/2023 2:59:53 PM WARN: Created 0
+5/9/2023 2:59:53 PM WARN: Updated 0
+5/9/2023 2:59:53 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:54 PM INFO: Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup
+5/9/2023 2:59:54 PM WARN: Total 1270
+5/9/2023 2:59:54 PM WARN: Created 0
+5/9/2023 2:59:54 PM WARN: Updated 0
+5/9/2023 2:59:54 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:55 PM INFO: Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup
+5/9/2023 2:59:55 PM WARN: Total 1270
+5/9/2023 2:59:55 PM WARN: Created 0
+5/9/2023 2:59:55 PM WARN: Updated 0
+5/9/2023 2:59:55 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:56 PM INFO: Reindexing from dm-idx-clm-v001 -> dm-idx-clm-v001backup
+5/9/2023 2:59:56 PM WARN: Total 1270
+5/9/2023 2:59:56 PM WARN: Created 1270
+5/9/2023 2:59:56 PM WARN: Updated 0
+5/9/2023 2:59:56 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:57 PM WARN: Reindexed data from dm-idx-clm-v001 to dm-idx-clm-v001backup
+5/9/2023 2:59:57 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:58 PM INFO: Aliases and Mappings: "{\"dm-idx-clm-v001\":{\"aliases\":{\"developerdomain_1666172382\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1666172382\"}}}]}}},\"developerdomain_1676549917\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"bpc\":{\"value\":\"20210511\"}}},{\"term\":{\"esDocumentType\":{\"value\":\"1676549917\"}}}]}}}},\"mappings\":{\"_meta\":{\"developerdomain_1676549917\":{\"appGroupName\":\"CLM\",\"appGroupId\":\"0108686e-8c33-49f3-b889-cdcbb92eed92\",\"esTypeSuffix\":null,\"buyerPartnerCode\":20210511,\"correlationId\":\"662_2c0b08d0-d4d9-42f6-ac44-109c41547e35\",\"publishedDate\":\"3/2/2023 2:22:54 PM\",\"esTypeName\":\"ClmApp\",\"esTypeCode\":\"1676549917\",\"buyerPartnerName\":\"DeveloperDomain\"},\"esMetadata\":{\"esTemplateVersion\":\"1.0\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 2:59:58 PM WARN: Deleting index: dm-idx-clm-v001
+5/9/2023 2:59:58 PM WARN: Deleted index: dm-idx-clm-v001
+5/9/2023 2:59:58 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:58 PM INFO: Creating Index: dm-idx-clm-v001
+5/9/2023 2:59:59 PM INFO: Created Index: dm-idx-clm-v001
+5/9/2023 2:59:59 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 2:59:59 PM INFO: Reindexing data from dm-idx-clm-v001backup to dm-idx-clm-v001
+5/9/2023 2:59:59 PM INFO: Straing Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001. TaskId: jCT4dATpSXmAWpL8-7KzGg:406160552
+5/9/2023 3:00:00 PM INFO: Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001
+5/9/2023 3:00:00 PM WARN: Total 1270
+5/9/2023 3:00:00 PM WARN: Created 0
+5/9/2023 3:00:00 PM WARN: Updated 0
+5/9/2023 3:00:00 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:01 PM INFO: Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001
+5/9/2023 3:00:01 PM WARN: Total 1270
+5/9/2023 3:00:01 PM WARN: Created 0
+5/9/2023 3:00:01 PM WARN: Updated 0
+5/9/2023 3:00:01 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:02 PM INFO: Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001
+5/9/2023 3:00:02 PM WARN: Total 1270
+5/9/2023 3:00:02 PM WARN: Created 0
+5/9/2023 3:00:02 PM WARN: Updated 0
+5/9/2023 3:00:02 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:03 PM INFO: Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001
+5/9/2023 3:00:03 PM WARN: Total 1270
+5/9/2023 3:00:03 PM WARN: Created 0
+5/9/2023 3:00:03 PM WARN: Updated 0
+5/9/2023 3:00:03 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:05 PM INFO: Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001
+5/9/2023 3:00:05 PM WARN: Total 1270
+5/9/2023 3:00:05 PM WARN: Created 0
+5/9/2023 3:00:05 PM WARN: Updated 0
+5/9/2023 3:00:05 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:06 PM INFO: Reindexing from dm-idx-clm-v001backup -> dm-idx-clm-v001
+5/9/2023 3:00:06 PM WARN: Total 1270
+5/9/2023 3:00:06 PM WARN: Created 1270
+5/9/2023 3:00:06 PM WARN: Updated 0
+5/9/2023 3:00:06 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:07 PM WARN: Reindexed data from dm-idx-clm-v001backup to dm-idx-clm-v001
+5/9/2023 3:00:07 PM WARN: Deleting index: dm-idx-clm-v001backup
+5/9/2023 3:00:08 PM WARN: Deleted index: dm-idx-clm-v001backup
+5/9/2023 3:00:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:08 PM INFO: Script Ended
+5/9/2023 3:00:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 3:00:08 PM INFO: Select operation ny entering number
+5/9/2023 3:00:08 PM INFO: 1. Update Template
+5/9/2023 3:00:08 PM INFO: 2. Rename fields
+5/9/2023 3:00:08 PM ERROR: 9. Exit!
+5/9/2023 6:50:37 PM INFO: Select operation ny entering number
+5/9/2023 6:50:37 PM INFO: 1. Update Template
+5/9/2023 6:50:37 PM INFO: 2. Rename fields
+5/9/2023 6:50:37 PM ERROR: 9. Exit!
+5/9/2023 6:50:46 PM INFO: User Input: 2
+5/9/2023 6:50:46 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:50:46 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 6:50:48 PM INFO: User Input: dev
+5/9/2023 6:50:48 PM INFO: Enter index name
+5/9/2023 6:50:54 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:50:54 PM INFO: Enter ticket id
+5/9/2023 6:50:58 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:50:58 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 6:50:58 PM INFO: Enter confirm to proceed
+5/9/2023 6:51:04 PM INFO: User Input: confirm
+5/9/2023 6:51:04 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192550643105105_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:51:06 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:51:24 PM ERROR: Exception occured Index does not exist hence aborting the operation
+5/9/2023 6:53:19 PM INFO: Select operation ny entering number
+5/9/2023 6:53:20 PM INFO: 1. Update Template
+5/9/2023 6:53:20 PM INFO: 2. Rename fields
+5/9/2023 6:53:20 PM ERROR: 9. Exit!
+5/9/2023 6:53:27 PM INFO: User Input: 2
+5/9/2023 6:53:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:53:27 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 6:53:29 PM INFO: User Input: dev
+5/9/2023 6:53:29 PM INFO: Enter index name
+5/9/2023 6:53:31 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:53:31 PM INFO: Enter ticket id
+5/9/2023 6:53:33 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:53:34 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 6:53:34 PM INFO: Enter confirm to proceed
+5/9/2023 6:53:38 PM INFO: User Input: confirm
+5/9/2023 6:53:39 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192552190693918_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:53:41 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:53:41 PM INFO: Current status: SUCCESS
+5/9/2023 6:53:41 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192552190693918_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":0,"size_in_bytes":0},"total":{"file_count":7,"size_in_bytes":66328},"start_time_in_millis":1683638620022,"time_in_millis":200},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":0,"size_in_bytes":0},"total":{"file_count":7,"size_in_bytes":66328},"start_time_in_millis":1683638620022,"time_in_millis":200}}}}}}]}
+5/9/2023 6:53:42 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:53:42 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192552190693918_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:53:42 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 6:53:42 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:53:42 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 6:53:42 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 6:53:43 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 6:53:43 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:53:43 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 6:53:43 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: qjNkF2cKRQGNhJYDYj7cRA:775225962
+5/9/2023 6:53:43 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 6:53:44 PM WARN: Total 2
+5/9/2023 6:53:44 PM WARN: Created 2
+5/9/2023 6:53:44 PM WARN: Updated 0
+5/9/2023 6:53:44 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:53:45 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 6:53:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:54:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:54:10 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 6:54:18 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 6:54:18 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 6:54:19 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:54:19 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 6:54:20 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 6:54:21 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:54:35 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 6:54:38 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {{
+    "source": 
+  """
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = "";
+    log = log + " |1| Inside renameField function, old field: "+ field + " and new field " + newField;
+    String[] fieldTokens = field.splitOnToken(".");
+    String[] newFieldTokens = newField.splitOnToken(".");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + " |2| Inside for loop for field: " + currentField + " i: " + i + " fieldTokens length: " + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + " |3| field token -1 condition for field: " + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + " |4| doc is" +  "field is "+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + " |5| field is present in the document for field: " + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + " |6| Returnning as nested object is null for field: " + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //""; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//""; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + "." +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + "." +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + " |7| fieldTokens1 are: " + fieldTokens1 +  " newfieldTokens1 are: " + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + " |8| Inside if condition as current obj is nested type for field: " + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + " |9| Inside if condition as current obj is map type for field: " + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = "";
+  String log = "";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + "| INFO: Script started" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  //ctx._source["log"] = log;
+  //ctx._source["renameLog"] = renameLog;
+  """,
+    "params": {
+      "renames": [
+         { "oldField": "kwd$name", "newField": "gst$name" },
+         { "oldField": "arr$milestones", "newField": "nst$milestones" },
+         { "oldField": "obj$updatedby.gst$lastname", "newField": "obj$updatedby.kwd$lastname" },
+         { "oldField": "arr$supplier.gst$legalcompanyname", "newField": "arr$supplier.kwd$legalcompanyname" },
+         { "oldField": "obj$updatedby.arr$supplier.gst$smartpartnercode", "newField": "obj$updatedby.arr$supplier.kwd$smartpartnercode" },
+         { "oldField": "arr$supplier.obj$updatedby.gst$firstname", "newField": "arr$supplier.obj$updatedby.kwd$firstname" },
+         { "oldField": "arr$supplier.obj$updatedby.arr$supplier.gst$partnercode", "newField": "arr$supplier.obj$updatedby.arr$supplier.adf$partnercode" }
+         
+      ]
+    }
+}} }. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 6:54:55 PM INFO: User Input: confirm
+5/9/2023 6:54:55 PM INFO: Continuing the execution
+5/9/2023 6:54:55 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 6:54:56 PM ERROR: Exception occured Response status code does not indicate success: 400 (Bad Request).
+5/9/2023 6:56:16 PM INFO: Select operation ny entering number
+5/9/2023 6:56:16 PM INFO: 1. Update Template
+5/9/2023 6:56:16 PM INFO: 2. Rename fields
+5/9/2023 6:56:16 PM ERROR: 9. Exit!
+5/9/2023 6:56:19 PM INFO: User Input: 2
+5/9/2023 6:56:19 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:56:19 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 6:56:21 PM INFO: User Input: dev
+5/9/2023 6:56:21 PM INFO: Enter index name
+5/9/2023 6:56:56 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:56:56 PM INFO: Enter ticket id
+5/9/2023 6:56:59 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:56:59 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 6:56:59 PM INFO: Enter confirm to proceed
+5/9/2023 6:57:03 PM INFO: User Input: confirm
+5/9/2023 6:57:03 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192554236037230_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:57:05 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:57:05 PM INFO: Current status: SUCCESS
+5/9/2023 6:57:06 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192554236037230_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683638824552,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683638824552,"time_in_millis":0}}}}}}]}
+5/9/2023 6:57:07 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:57:07 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192554236037230_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:57:07 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 6:57:07 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:57:07 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 6:57:07 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 6:57:07 PM ERROR: Exception occured Response status code does not indicate success: 400 (Bad Request).
+5/9/2023 6:57:44 PM INFO: Select operation ny entering number
+5/9/2023 6:57:44 PM INFO: 1. Update Template
+5/9/2023 6:57:44 PM INFO: 2. Rename fields
+5/9/2023 6:57:44 PM ERROR: 9. Exit!
+5/9/2023 6:57:46 PM INFO: User Input: 2
+5/9/2023 6:57:47 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:57:47 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 6:57:49 PM INFO: User Input: dev
+5/9/2023 6:57:49 PM INFO: Enter index name
+5/9/2023 6:58:05 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:58:05 PM INFO: Enter ticket id
+5/9/2023 6:58:08 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 6:58:08 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 6:58:08 PM INFO: Enter confirm to proceed
+5/9/2023 6:58:12 PM INFO: User Input: confirm
+5/9/2023 6:58:12 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192554925087795_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:58:14 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:15 PM INFO: Current status: SUCCESS
+5/9/2023 6:58:15 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192554925087795_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":0,"size_in_bytes":0},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683638893802,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":0,"size_in_bytes":0},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683638893802,"time_in_millis":0}}}}}}]}
+5/9/2023 6:58:16 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:16 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192554925087795_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 6:58:16 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 6:58:16 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:16 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 6:58:16 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 6:58:17 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 6:58:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:17 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 6:58:43 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: jCT4dATpSXmAWpL8-7KzGg:408701079
+5/9/2023 6:58:43 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 6:58:43 PM WARN: Total 0
+5/9/2023 6:58:43 PM WARN: Created 0
+5/9/2023 6:58:43 PM WARN: Updated 0
+5/9/2023 6:58:43 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:44 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 6:58:44 PM WARN: Total 2
+5/9/2023 6:58:44 PM WARN: Created 2
+5/9/2023 6:58:44 PM WARN: Updated 0
+5/9/2023 6:58:44 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:45 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 6:58:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:48 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:49 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 6:58:49 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 6:58:49 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 6:58:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:49 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 6:58:50 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 6:58:50 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 6:58:50 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 6:58:50 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {{
+    "source": 
+  """
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = "";
+    log = log + " |1| Inside renameField function, old field: "+ field + " and new field " + newField;
+    String[] fieldTokens = field.splitOnToken(".");
+    String[] newFieldTokens = newField.splitOnToken(".");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + " |2| Inside for loop for field: " + currentField + " i: " + i + " fieldTokens length: " + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + " |3| field token -1 condition for field: " + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + " |4| doc is" +  "field is "+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + " |5| field is present in the document for field: " + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + " |6| Returnning as nested object is null for field: " + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //""; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//""; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + "." +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + "." +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + " |7| fieldTokens1 are: " + fieldTokens1 +  " newfieldTokens1 are: " + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + " |8| Inside if condition as current obj is nested type for field: " + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + " |9| Inside if condition as current obj is map type for field: " + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = "";
+  String log = "";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + "| INFO: Script started" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  //ctx._source["log"] = log;
+  //ctx._source["renameLog"] = renameLog;
+  """,
+    "params": {
+      "renames": [
+         { "oldField": "kwd$name", "newField": "gst$name" },
+         { "oldField": "arr$milestones", "newField": "nst$milestones" },
+         { "oldField": "obj$updatedby.gst$lastname", "newField": "obj$updatedby.kwd$lastname" },
+         { "oldField": "arr$supplier.gst$legalcompanyname", "newField": "arr$supplier.kwd$legalcompanyname" },
+         { "oldField": "obj$updatedby.arr$supplier.gst$smartpartnercode", "newField": "obj$updatedby.arr$supplier.kwd$smartpartnercode" },
+         { "oldField": "arr$supplier.obj$updatedby.gst$firstname", "newField": "arr$supplier.obj$updatedby.kwd$firstname" },
+         { "oldField": "arr$supplier.obj$updatedby.arr$supplier.gst$partnercode", "newField": "arr$supplier.obj$updatedby.arr$supplier.adf$partnercode" }
+         
+      ]
+    }
+}} }. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 6:59:00 PM INFO: User Input: confirm
+5/9/2023 6:59:00 PM INFO: Continuing the execution
+5/9/2023 6:59:00 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:00:01 PM INFO: Select operation ny entering number
+5/9/2023 7:00:03 PM INFO: 1. Update Template
+5/9/2023 7:00:04 PM INFO: 2. Rename fields
+5/9/2023 7:00:04 PM ERROR: 9. Exit!
+5/9/2023 7:00:24 PM INFO: User Input: 2
+5/9/2023 7:00:24 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:00:24 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:00:25 PM INFO: User Input: dev
+5/9/2023 7:00:25 PM INFO: Enter index name
+5/9/2023 7:00:39 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:00:39 PM INFO: Enter ticket id
+5/9/2023 7:00:41 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:00:41 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 7:00:41 PM INFO: Enter confirm to proceed
+5/9/2023 7:00:44 PM INFO: User Input: confirm
+5/9/2023 7:00:44 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192556443398423_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:00:47 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:00:47 PM INFO: Current status: SUCCESS
+5/9/2023 7:00:47 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192556443398423_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":1,"size_in_bytes":226},"total":{"file_count":1,"size_in_bytes":226},"start_time_in_millis":1683639045768,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":1,"size_in_bytes":226},"total":{"file_count":1,"size_in_bytes":226},"start_time_in_millis":1683639045768,"time_in_millis":0}}}}}}]}
+5/9/2023 7:00:48 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:00:48 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192556443398423_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:00:48 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 7:00:48 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:00:48 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 7:00:48 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 7:00:49 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 7:00:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:00:49 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:01:08 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: qjNkF2cKRQGNhJYDYj7cRA:775296746
+5/9/2023 7:01:09 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 7:01:09 PM WARN: Total 0
+5/9/2023 7:01:09 PM WARN: Created 0
+5/9/2023 7:01:09 PM WARN: Updated 0
+5/9/2023 7:01:09 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:01:10 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:01:10 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:01:12 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:01:12 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 7:01:12 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 7:01:13 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 7:01:13 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:01:13 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 7:01:14 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 7:01:14 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:01:14 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 7:01:14 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    "source": 
+  """
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = "";
+    log = log + " |1| Inside renameField function, old field: "+ field + " and new field " + newField;
+    String[] fieldTokens = field.splitOnToken(".");
+    String[] newFieldTokens = newField.splitOnToken(".");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + " |2| Inside for loop for field: " + currentField + " i: " + i + " fieldTokens length: " + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + " |3| field token -1 condition for field: " + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + " |4| doc is" +  "field is "+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + " |5| field is present in the document for field: " + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + " |6| Returnning as nested object is null for field: " + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //""; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//""; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + "." +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + "." +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + " |7| fieldTokens1 are: " + fieldTokens1 +  " newfieldTokens1 are: " + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + " |8| Inside if condition as current obj is nested type for field: " + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + " |9| Inside if condition as current obj is map type for field: " + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = "";
+  String log = "";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + "| INFO: Script started" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  //ctx._source["log"] = log;
+  //ctx._source["renameLog"] = renameLog;
+  """,
+    "params": {
+      "renames": [
+         { "oldField": "kwd$name", "newField": "gst$name" },
+         { "oldField": "arr$milestones", "newField": "nst$milestones" },
+         { "oldField": "obj$updatedby.gst$lastname", "newField": "obj$updatedby.kwd$lastname" },
+         { "oldField": "arr$supplier.gst$legalcompanyname", "newField": "arr$supplier.kwd$legalcompanyname" },
+         { "oldField": "obj$updatedby.arr$supplier.gst$smartpartnercode", "newField": "obj$updatedby.arr$supplier.kwd$smartpartnercode" },
+         { "oldField": "arr$supplier.obj$updatedby.gst$firstname", "newField": "arr$supplier.obj$updatedby.kwd$firstname" },
+         { "oldField": "arr$supplier.obj$updatedby.arr$supplier.gst$partnercode", "newField": "arr$supplier.obj$updatedby.arr$supplier.adf$partnercode" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 7:01:20 PM INFO: User Input: confirm
+5/9/2023 7:01:20 PM INFO: Continuing the execution
+5/9/2023 7:01:20 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:06:39 PM INFO: Select operation ny entering number
+5/9/2023 7:06:39 PM INFO: 1. Update Template
+5/9/2023 7:06:39 PM INFO: 2. Rename fields
+5/9/2023 7:06:39 PM ERROR: 9. Exit!
+5/9/2023 7:07:08 PM INFO: User Input: 2
+5/9/2023 7:07:08 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:07:08 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:07:11 PM INFO: User Input: dev
+5/9/2023 7:07:11 PM INFO: Enter index name
+5/9/2023 7:07:24 PM INFO: User Input: dm-idx-contract-v001
+5/9/2023 7:07:24 PM INFO: Enter ticket id
+5/9/2023 7:07:28 PM INFO: User Input: dm-idx-contract-v001
+5/9/2023 7:07:28 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-contract-v001, TicketId 1111
+5/9/2023 7:07:28 PM INFO: Enter confirm to proceed
+5/9/2023 7:07:31 PM INFO: User Input: confirm
+5/9/2023 7:07:31 PM INFO: taking backup for index: dm-idx-contract-v001. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192560518869470_dm-idx-contract-v001-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:07:33 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:07:34 PM ERROR: Exception occured Index does not exist hence aborting the operation
+5/9/2023 7:08:17 PM INFO: Select operation ny entering number
+5/9/2023 7:08:18 PM INFO: 1. Update Template
+5/9/2023 7:08:18 PM INFO: 2. Rename fields
+5/9/2023 7:08:18 PM ERROR: 9. Exit!
+5/9/2023 7:08:20 PM INFO: User Input: 2
+5/9/2023 7:08:20 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:20 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:08:22 PM INFO: User Input: dev
+5/9/2023 7:08:22 PM INFO: Enter index name
+5/9/2023 7:08:24 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:08:24 PM INFO: Enter ticket id
+5/9/2023 7:08:27 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:08:27 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 7:08:27 PM INFO: Enter confirm to proceed
+5/9/2023 7:08:30 PM INFO: User Input: confirm
+5/9/2023 7:08:30 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192561105394851_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:08:32 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:32 PM INFO: Current status: SUCCESS
+5/9/2023 7:08:33 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192561105394851_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683639511512,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683639511512,"time_in_millis":0}}}}}}]}
+5/9/2023 7:08:34 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:34 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192561105394851_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:08:34 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 7:08:34 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:34 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 7:08:34 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 7:08:34 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 7:08:34 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:34 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:08:44 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: irz8WkYeR9WF-jVKnshmSw:153122895
+5/9/2023 7:08:44 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 7:08:44 PM WARN: Total 0
+5/9/2023 7:08:44 PM WARN: Created 0
+5/9/2023 7:08:44 PM WARN: Updated 0
+5/9/2023 7:08:44 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:45 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 7:08:45 PM WARN: Total 2
+5/9/2023 7:08:45 PM WARN: Created 2
+5/9/2023 7:08:45 PM WARN: Updated 0
+5/9/2023 7:08:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:46 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:08:46 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:49 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 7:08:49 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 7:08:49 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 7:08:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:49 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 7:08:50 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 7:08:50 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:08:50 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 7:08:50 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    \"source\": 
+  \"\"\"
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \"\";
+    log = log + \" |1| Inside renameField function, old field: \"+ field + \" and new field \" + newField;
+    String[] fieldTokens = field.splitOnToken(\".\");
+    String[] newFieldTokens = newField.splitOnToken(\".\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \" |2| Inside for loop for field: \" + currentField + \" i: \" + i + \" fieldTokens length: \" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \" |3| field token -1 condition for field: \" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \" |4| doc is\" +  \"field is \"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \" |5| field is present in the document for field: \" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \" |6| Returnning as nested object is null for field: \" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\"\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\"\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \".\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \".\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \" |7| fieldTokens1 are: \" + fieldTokens1 +  \" newfieldTokens1 are: \" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \" |8| Inside if condition as current obj is nested type for field: \" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \" |9| Inside if condition as current obj is map type for field: \" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \"\";
+  String log = \"\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \"| INFO: Script started\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  //ctx._source[\"log\"] = log;
+  //ctx._source[\"renameLog\"] = renameLog;
+  \"\"\",
+    \"params\": {
+      \"renames\": [
+         { \"oldField\": \"kwd$name\", \"newField\": \"gst$name\" },
+         { \"oldField\": \"arr$milestones\", \"newField\": \"nst$milestones\" },
+         { \"oldField\": \"obj$updatedby.gst$lastname\", \"newField\": \"obj$updatedby.kwd$lastname\" },
+         { \"oldField\": \"arr$supplier.gst$legalcompanyname\", \"newField\": \"arr$supplier.kwd$legalcompanyname\" },
+         { \"oldField\": \"obj$updatedby.arr$supplier.gst$smartpartnercode\", \"newField\": \"obj$updatedby.arr$supplier.kwd$smartpartnercode\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.gst$firstname\", \"newField\": \"arr$supplier.obj$updatedby.kwd$firstname\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.arr$supplier.gst$partnercode\", \"newField\": \"arr$supplier.obj$updatedby.arr$supplier.adf$partnercode\" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 7:08:58 PM INFO: User Input: confirm
+5/9/2023 7:08:58 PM INFO: Continuing the execution
+5/9/2023 7:08:58 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:10:00 PM ERROR: Exception occured Object serialized to String. JObject instance expected.
+5/9/2023 7:11:38 PM INFO: Select operation ny entering number
+5/9/2023 7:11:38 PM INFO: 1. Update Template
+5/9/2023 7:11:38 PM INFO: 2. Rename fields
+5/9/2023 7:11:38 PM ERROR: 9. Exit!
+5/9/2023 7:11:40 PM INFO: User Input: 2
+5/9/2023 7:11:41 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:11:41 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:11:43 PM INFO: User Input: dev
+5/9/2023 7:11:43 PM INFO: Enter index name
+5/9/2023 7:12:00 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:12:00 PM INFO: Enter ticket id
+5/9/2023 7:12:00 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:12:00 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 
+5/9/2023 7:12:00 PM INFO: Enter confirm to proceed
+5/9/2023 7:12:05 PM INFO: User Input: 
+5/9/2023 7:12:05 PM ERROR: Script aborted! Failed to confirm action.
+5/9/2023 7:12:05 PM ERROR: Exception occured Script aborted!
+5/9/2023 7:12:14 PM INFO: Select operation ny entering number
+5/9/2023 7:12:14 PM INFO: 1. Update Template
+5/9/2023 7:12:14 PM INFO: 2. Rename fields
+5/9/2023 7:12:14 PM ERROR: 9. Exit!
+5/9/2023 7:12:16 PM INFO: User Input: 2
+5/9/2023 7:12:16 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:12:17 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:12:18 PM INFO: User Input: dev
+5/9/2023 7:12:19 PM INFO: Enter index name
+5/9/2023 7:12:21 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:12:21 PM INFO: Enter ticket id
+5/9/2023 7:12:23 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:12:24 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 7:12:24 PM INFO: Enter confirm to proceed
+5/9/2023 7:12:27 PM INFO: User Input: confirm
+5/9/2023 7:12:27 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192563476715736_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:12:29 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:12:30 PM INFO: Current status: SUCCESS
+5/9/2023 7:12:30 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192563476715736_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683639748881,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683639748881,"time_in_millis":0}}}}}}]}
+5/9/2023 7:12:31 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:12:31 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192563476715736_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:12:31 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 7:12:31 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:12:31 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 7:12:31 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 7:12:32 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 7:12:32 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:12:32 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:12:42 PM ERROR: Exception occured Unexpected character encountered while parsing value: h. Path '', line 0, position 0.
+5/9/2023 7:13:25 PM INFO: Select operation ny entering number
+5/9/2023 7:13:26 PM INFO: 1. Update Template
+5/9/2023 7:13:26 PM INFO: 2. Rename fields
+5/9/2023 7:13:26 PM ERROR: 9. Exit!
+5/9/2023 7:13:33 PM INFO: User Input: 1
+5/9/2023 7:13:33 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:13:33 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:13:45 PM INFO: Select operation ny entering number
+5/9/2023 7:13:45 PM INFO: 1. Update Template
+5/9/2023 7:13:45 PM INFO: 2. Rename fields
+5/9/2023 7:13:45 PM ERROR: 9. Exit!
+5/9/2023 7:13:50 PM INFO: User Input: 2
+5/9/2023 7:13:50 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:13:50 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:13:51 PM INFO: User Input: dev
+5/9/2023 7:13:51 PM INFO: Enter index name
+5/9/2023 7:13:54 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:13:54 PM INFO: Enter ticket id
+5/9/2023 7:13:56 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:13:56 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 7:13:56 PM INFO: Enter confirm to proceed
+5/9/2023 7:13:59 PM INFO: User Input: confirm
+5/9/2023 7:13:59 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192564392399266_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:14:01 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:01 PM INFO: Current status: SUCCESS
+5/9/2023 7:14:01 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192564392399266_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":0,"size_in_bytes":0},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683639840347,"time_in_millis":200},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":0,"size_in_bytes":0},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683639840347,"time_in_millis":200}}}}}}]}
+5/9/2023 7:14:02 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:02 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192564392399266_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:14:02 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 7:14:02 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:02 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 7:14:02 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 7:14:03 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 7:14:03 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:03 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:14:24 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: irz8WkYeR9WF-jVKnshmSw:153170730
+5/9/2023 7:14:24 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 7:14:24 PM WARN: Total 2
+5/9/2023 7:14:24 PM WARN: Created 2
+5/9/2023 7:14:24 PM WARN: Updated 0
+5/9/2023 7:14:24 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:25 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:14:25 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:27 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 7:14:27 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 7:14:27 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 7:14:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:27 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 7:14:28 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 7:14:28 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:14:28 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 7:14:28 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    \"source\": 
+  \"\"\"
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \"\";
+    log = log + \" |1| Inside renameField function, old field: \"+ field + \" and new field \" + newField;
+    String[] fieldTokens = field.splitOnToken(\".\");
+    String[] newFieldTokens = newField.splitOnToken(\".\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \" |2| Inside for loop for field: \" + currentField + \" i: \" + i + \" fieldTokens length: \" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \" |3| field token -1 condition for field: \" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \" |4| doc is\" +  \"field is \"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \" |5| field is present in the document for field: \" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \" |6| Returnning as nested object is null for field: \" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\"\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\"\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \".\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \".\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \" |7| fieldTokens1 are: \" + fieldTokens1 +  \" newfieldTokens1 are: \" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \" |8| Inside if condition as current obj is nested type for field: \" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \" |9| Inside if condition as current obj is map type for field: \" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \"\";
+  String log = \"\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \"| INFO: Script started\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  //ctx._source[\"log\"] = log;
+  //ctx._source[\"renameLog\"] = renameLog;
+  \"\"\",
+    \"params\": {
+      \"renames\": [
+         { \"oldField\": \"kwd$name\", \"newField\": \"gst$name\" },
+         { \"oldField\": \"arr$milestones\", \"newField\": \"nst$milestones\" },
+         { \"oldField\": \"obj$updatedby.gst$lastname\", \"newField\": \"obj$updatedby.kwd$lastname\" },
+         { \"oldField\": \"arr$supplier.gst$legalcompanyname\", \"newField\": \"arr$supplier.kwd$legalcompanyname\" },
+         { \"oldField\": \"obj$updatedby.arr$supplier.gst$smartpartnercode\", \"newField\": \"obj$updatedby.arr$supplier.kwd$smartpartnercode\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.gst$firstname\", \"newField\": \"arr$supplier.obj$updatedby.kwd$firstname\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.arr$supplier.gst$partnercode\", \"newField\": \"arr$supplier.obj$updatedby.arr$supplier.adf$partnercode\" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 7:14:31 PM INFO: User Input: confirm
+5/9/2023 7:14:31 PM INFO: Continuing the execution
+5/9/2023 7:14:31 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:14:48 PM ERROR: Exception occured Invalid property identifier character: \. Path 'script', line 2, position 4.
+5/9/2023 7:22:40 PM INFO: Select operation ny entering number
+5/9/2023 7:22:40 PM INFO: 1. Update Template
+5/9/2023 7:22:40 PM INFO: 2. Rename fields
+5/9/2023 7:22:40 PM ERROR: 9. Exit!
+5/9/2023 7:22:47 PM INFO: User Input: 2
+5/9/2023 7:22:47 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:22:47 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 7:22:49 PM INFO: User Input: dev
+5/9/2023 7:22:49 PM INFO: Enter index name
+5/9/2023 7:23:18 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:23:18 PM INFO: Enter ticket id
+5/9/2023 7:23:20 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 7:23:20 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 7:23:20 PM INFO: Enter confirm to proceed
+5/9/2023 7:23:22 PM INFO: User Input: confirm
+5/9/2023 7:23:22 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192570024922449_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:23:24 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:25 PM INFO: Current status: SUCCESS
+5/9/2023 7:23:25 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192570024922449_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683640403747,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683640403747,"time_in_millis":0}}}}}}]}
+5/9/2023 7:23:26 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:26 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192570024922449_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 7:23:26 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 7:23:26 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:26 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 7:23:26 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 7:23:27 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 7:23:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:27 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:23:41 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: qjNkF2cKRQGNhJYDYj7cRA:775499618
+5/9/2023 7:23:41 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 7:23:41 PM WARN: Total 2
+5/9/2023 7:23:41 PM WARN: Created 2
+5/9/2023 7:23:41 PM WARN: Updated 0
+5/9/2023 7:23:41 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:42 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 7:23:42 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:44 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:44 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 7:23:44 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 7:23:45 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 7:23:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:45 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 7:23:45 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 7:23:45 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 7:23:45 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 7:23:45 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    \"source\": 
+  \"
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \"\";
+    log = log + \" |1| Inside renameField function, old field: \"+ field + \" and new field \" + newField;
+    String[] fieldTokens = field.splitOnToken(\".\");
+    String[] newFieldTokens = newField.splitOnToken(\".\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \" |2| Inside for loop for field: \" + currentField + \" i: \" + i + \" fieldTokens length: \" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \" |3| field token -1 condition for field: \" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \" |4| doc is\" +  \"field is \"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \" |5| field is present in the document for field: \" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \" |6| Returnning as nested object is null for field: \" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\"\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\"\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \".\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \".\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \" |7| fieldTokens1 are: \" + fieldTokens1 +  \" newfieldTokens1 are: \" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \" |8| Inside if condition as current obj is nested type for field: \" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \" |9| Inside if condition as current obj is map type for field: \" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \"\";
+  String log = \"\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \"| INFO: Script started\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  \",
+    \"params\": {
+      \"renames\": [
+         { \"oldField\": \"kwd$name\", \"newField\": \"gst$name\" },
+         { \"oldField\": \"arr$milestones\", \"newField\": \"nst$milestones\" },
+         { \"oldField\": \"obj$updatedby.gst$lastname\", \"newField\": \"obj$updatedby.kwd$lastname\" },
+         { \"oldField\": \"arr$supplier.gst$legalcompanyname\", \"newField\": \"arr$supplier.kwd$legalcompanyname\" },
+         { \"oldField\": \"obj$updatedby.arr$supplier.gst$smartpartnercode\", \"newField\": \"obj$updatedby.arr$supplier.kwd$smartpartnercode\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.gst$firstname\", \"newField\": \"arr$supplier.obj$updatedby.kwd$firstname\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.arr$supplier.gst$partnercode\", \"newField\": \"arr$supplier.obj$updatedby.arr$supplier.adf$partnercode\" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 7:23:51 PM INFO: User Input: confirm
+5/9/2023 7:23:51 PM INFO: Continuing the execution
+5/9/2023 7:23:51 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:26:35 PM INFO: Select operation ny entering number
+5/9/2023 8:26:36 PM INFO: 1. Update Template
+5/9/2023 8:26:36 PM INFO: 2. Rename fields
+5/9/2023 8:26:36 PM ERROR: 9. Exit!
+5/9/2023 8:26:53 PM INFO: User Input: 2
+5/9/2023 8:26:53 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:26:53 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 8:26:54 PM INFO: User Input: dev
+5/9/2023 8:26:54 PM INFO: Enter index name
+5/9/2023 8:26:56 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:26:56 PM INFO: Enter ticket id
+5/9/2023 8:26:58 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:26:58 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 8:26:58 PM INFO: Enter confirm to proceed
+5/9/2023 8:27:00 PM INFO: User Input: confirm
+5/9/2023 8:27:00 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192608207728575_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:27:02 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:03 PM INFO: Current status: SUCCESS
+5/9/2023 8:27:03 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192608207728575_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683644221888,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683644221888,"time_in_millis":0}}}}}}]}
+5/9/2023 8:27:04 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:04 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192608207728575_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:27:04 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 8:27:04 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:04 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 8:27:04 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 8:27:04 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 8:27:04 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:04 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:27:10 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: qjNkF2cKRQGNhJYDYj7cRA:776075753
+5/9/2023 8:27:10 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 8:27:10 PM WARN: Total 2
+5/9/2023 8:27:10 PM WARN: Created 2
+5/9/2023 8:27:10 PM WARN: Updated 0
+5/9/2023 8:27:10 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:11 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:27:11 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:13 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:13 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 8:27:13 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 8:27:14 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 8:27:14 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:14 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 8:27:14 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 8:27:14 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:27:14 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 8:27:14 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    \"source\": 
+  \"
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \\"\\";
+    log = log + \\" |1| Inside renameField function, old field: \\"+ field + \\" and new field \\" + newField;
+    String[] fieldTokens = field.splitOnToken(\\".\\");
+    String[] newFieldTokens = newField.splitOnToken(\\".\\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \\" |2| Inside for loop for field: \\" + currentField + \\" i: \\" + i + \\" fieldTokens length: \\" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \\" |3| field token -1 condition for field: \\" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \\" |4| doc is\\" +  \\"field is \\"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \\" |5| field is present in the document for field: \\" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \\" |6| Returnning as nested object is null for field: \\" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\\"\\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\\"\\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \\".\\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \\".\\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \\" |7| fieldTokens1 are: \\" + fieldTokens1 +  \\" newfieldTokens1 are: \\" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \\" |8| Inside if condition as current obj is nested type for field: \\" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \\" |9| Inside if condition as current obj is map type for field: \\" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \\"\\";
+  String log = \\"\\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \\"| INFO: Script started\\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  \",
+    \"params\": {
+      \"renames\": [
+         { \"oldField\": \"kwd$name\", \"newField\": \"gst$name\" },
+         { \"oldField\": \"arr$milestones\", \"newField\": \"nst$milestones\" },
+         { \"oldField\": \"obj$updatedby.gst$lastname\", \"newField\": \"obj$updatedby.kwd$lastname\" },
+         { \"oldField\": \"arr$supplier.gst$legalcompanyname\", \"newField\": \"arr$supplier.kwd$legalcompanyname\" },
+         { \"oldField\": \"obj$updatedby.arr$supplier.gst$smartpartnercode\", \"newField\": \"obj$updatedby.arr$supplier.kwd$smartpartnercode\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.gst$firstname\", \"newField\": \"arr$supplier.obj$updatedby.kwd$firstname\" },
+         { \"oldField\": \"arr$supplier.obj$updatedby.arr$supplier.gst$partnercode\", \"newField\": \"arr$supplier.obj$updatedby.arr$supplier.adf$partnercode\" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 8:27:23 PM INFO: User Input: confirm
+5/9/2023 8:27:23 PM INFO: Continuing the execution
+5/9/2023 8:27:23 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:27:56 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    "source": 
+  "
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \"\";
+    log = log + \" |1| Inside renameField function, old field: \"+ field + \" and new field \" + newField;
+    String[] fieldTokens = field.splitOnToken(\".\");
+    String[] newFieldTokens = newField.splitOnToken(\".\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \" |2| Inside for loop for field: \" + currentField + \" i: \" + i + \" fieldTokens length: \" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \" |3| field token -1 condition for field: \" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \" |4| doc is\" +  \"field is \"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \" |5| field is present in the document for field: \" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \" |6| Returnning as nested object is null for field: \" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\"\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\"\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \".\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \".\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \" |7| fieldTokens1 are: \" + fieldTokens1 +  \" newfieldTokens1 are: \" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \" |8| Inside if condition as current obj is nested type for field: \" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \" |9| Inside if condition as current obj is map type for field: \" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \"\";
+  String log = \"\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \"| INFO: Script started\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  ",
+    "params": {
+      "renames": [
+         { "oldField": "kwd$name", "newField": "gst$name" },
+         { "oldField": "arr$milestones", "newField": "nst$milestones" },
+         { "oldField": "obj$updatedby.gst$lastname", "newField": "obj$updatedby.kwd$lastname" },
+         { "oldField": "arr$supplier.gst$legalcompanyname", "newField": "arr$supplier.kwd$legalcompanyname" },
+         { "oldField": "obj$updatedby.arr$supplier.gst$smartpartnercode", "newField": "obj$updatedby.arr$supplier.kwd$smartpartnercode" },
+         { "oldField": "arr$supplier.obj$updatedby.gst$firstname", "newField": "arr$supplier.obj$updatedby.kwd$firstname" },
+         { "oldField": "arr$supplier.obj$updatedby.arr$supplier.gst$partnercode", "newField": "arr$supplier.obj$updatedby.arr$supplier.adf$partnercode" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 8:28:04 PM INFO: User Input: confirm
+5/9/2023 8:28:04 PM INFO: Continuing the execution
+5/9/2023 8:28:04 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:36:21 PM INFO: Select operation ny entering number
+5/9/2023 8:36:22 PM INFO: 1. Update Template
+5/9/2023 8:36:22 PM INFO: 2. Rename fields
+5/9/2023 8:36:22 PM ERROR: 9. Exit!
+5/9/2023 8:36:44 PM INFO: User Input: 3
+5/9/2023 8:36:44 PM WARN: Invalid Input. Please try again
+5/9/2023 8:36:44 PM INFO: Select operation ny entering number
+5/9/2023 8:36:44 PM INFO: 1. Update Template
+5/9/2023 8:36:44 PM INFO: 2. Rename fields
+5/9/2023 8:36:44 PM ERROR: 9. Exit!
+5/9/2023 8:36:46 PM INFO: User Input: 2
+5/9/2023 8:36:46 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:36:46 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 8:36:47 PM INFO: User Input: dev
+5/9/2023 8:36:47 PM INFO: Enter index name
+5/9/2023 8:37:18 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:37:18 PM INFO: Enter ticket id
+5/9/2023 8:37:20 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:37:20 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 8:37:20 PM INFO: Enter confirm to proceed
+5/9/2023 8:37:22 PM INFO: User Input: confirm
+5/9/2023 8:37:22 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192614429770229_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:37:26 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:26 PM INFO: Current status: SUCCESS
+5/9/2023 8:37:26 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192614429770229_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":13,"size_in_bytes":121503},"total":{"file_count":13,"size_in_bytes":121503},"start_time_in_millis":1683644845074,"time_in_millis":201},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":13,"size_in_bytes":121503},"total":{"file_count":13,"size_in_bytes":121503},"start_time_in_millis":1683644845074,"time_in_millis":201}}}}}}]}
+5/9/2023 8:37:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:27 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192614429770229_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:37:27 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 8:37:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:27 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 8:37:27 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 8:37:28 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 8:37:28 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:28 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:37:32 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: jCT4dATpSXmAWpL8-7KzGg:409789459
+5/9/2023 8:37:32 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 8:37:32 PM WARN: Total 2
+5/9/2023 8:37:32 PM WARN: Created 2
+5/9/2023 8:37:32 PM WARN: Updated 0
+5/9/2023 8:37:32 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:33 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:37:33 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:36 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:37:59 PM ERROR: Exception occured An error occurred while sending the request.
+5/9/2023 8:40:26 PM INFO: Select operation ny entering number
+5/9/2023 8:40:26 PM INFO: 1. Update Template
+5/9/2023 8:40:26 PM INFO: 2. Rename fields
+5/9/2023 8:40:26 PM ERROR: 9. Exit!
+5/9/2023 8:40:56 PM INFO: User Input: 2
+5/9/2023 8:40:56 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:40:56 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 8:40:57 PM INFO: User Input: dev
+5/9/2023 8:40:57 PM INFO: Enter index name
+5/9/2023 8:41:08 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:41:08 PM INFO: Enter ticket id
+5/9/2023 8:41:11 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:41:11 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 8:41:11 PM INFO: Enter confirm to proceed
+5/9/2023 8:41:13 PM INFO: User Input: confirm
+5/9/2023 8:41:13 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192616735369546_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:41:15 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:15 PM INFO: Current status: SUCCESS
+5/9/2023 8:41:16 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192616735369546_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683645074640,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683645074640,"time_in_millis":0}}}}}}]}
+5/9/2023 8:41:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:17 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192616735369546_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:41:17 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 8:41:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:17 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 8:41:17 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 8:41:17 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 8:41:17 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:17 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:41:20 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: qjNkF2cKRQGNhJYDYj7cRA:776206993
+5/9/2023 8:41:20 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 8:41:20 PM WARN: Total 2
+5/9/2023 8:41:20 PM WARN: Created 2
+5/9/2023 8:41:20 PM WARN: Updated 0
+5/9/2023 8:41:20 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:21 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:41:21 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:23 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:23 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 8:41:23 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 8:41:24 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 8:41:24 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:24 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 8:41:25 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 8:41:25 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:25 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 8:41:25 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v003"}, "dest": {"index": "dm-idx-nimish-v0031111"}, "script": {
+    "source": 
+  "
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \"\";
+    log = log + \" |1| Inside renameField function, old field: \"+ field + \" and new field \" + newField;
+    String[] fieldTokens = field.splitOnToken(\".\");
+    String[] newFieldTokens = newField.splitOnToken(\".\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \" |2| Inside for loop for field: \" + currentField + \" i: \" + i + \" fieldTokens length: \" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \" |3| field token -1 condition for field: \" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \" |4| doc is\" +  \"field is \"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \" |5| field is present in the document for field: \" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \" |6| Returnning as nested object is null for field: \" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\"\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\"\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \".\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \".\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \" |7| fieldTokens1 are: \" + fieldTokens1 +  \" newfieldTokens1 are: \" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \" |8| Inside if condition as current obj is nested type for field: \" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \" |9| Inside if condition as current obj is map type for field: \" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \"\";
+  String log = \"\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \"| INFO: Script started\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  ",
+    "params": {
+      "renames": [
+         { "oldField": "kwd$name", "newField": "gst$name" },
+         { "oldField": "arr$milestones", "newField": "nst$milestones" },
+         { "oldField": "obj$updatedby.gst$lastname", "newField": "obj$updatedby.kwd$lastname" },
+         { "oldField": "arr$supplier.gst$legalcompanyname", "newField": "arr$supplier.kwd$legalcompanyname" },
+         { "oldField": "obj$updatedby.arr$supplier.gst$smartpartnercode", "newField": "obj$updatedby.arr$supplier.kwd$smartpartnercode" },
+         { "oldField": "arr$supplier.obj$updatedby.gst$firstname", "newField": "arr$supplier.obj$updatedby.kwd$firstname" },
+         { "oldField": "arr$supplier.obj$updatedby.arr$supplier.gst$partnercode", "newField": "arr$supplier.obj$updatedby.arr$supplier.adf$partnercode" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 8:41:28 PM INFO: User Input: confirm
+5/9/2023 8:41:28 PM INFO: Continuing the execution
+5/9/2023 8:41:28 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:41:38 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: qjNkF2cKRQGNhJYDYj7cRA:776208450
+5/9/2023 8:41:38 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 8:41:38 PM WARN: Total 0
+5/9/2023 8:41:38 PM WARN: Created 0
+5/9/2023 8:41:38 PM WARN: Updated 0
+5/9/2023 8:41:38 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:39 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:41:39 PM INFO: Rename script is excuted for index: dm-idx-nimish-v003
+5/9/2023 8:41:39 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:39 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:41:39 PM INFO: Select operation ny entering number
+5/9/2023 8:41:39 PM INFO: 1. Update Template
+5/9/2023 8:41:39 PM INFO: 2. Rename fields
+5/9/2023 8:41:39 PM ERROR: 9. Exit!
+5/9/2023 8:45:00 PM INFO: Select operation ny entering number
+5/9/2023 8:45:00 PM INFO: 1. Update Template
+5/9/2023 8:45:00 PM INFO: 2. Rename fields
+5/9/2023 8:45:00 PM ERROR: 9. Exit!
+5/9/2023 8:45:02 PM INFO: User Input: 2
+5/9/2023 8:45:02 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:03 PM INFO: Enter the environment (DEV, QC ,UATUS, UATEU, UATAPAC, UATSEA, PRODUS , PRODEU, PRODAPAC, PRODSEA):
+5/9/2023 8:45:04 PM INFO: User Input: dev
+5/9/2023 8:45:05 PM INFO: Enter index name
+5/9/2023 8:45:16 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:45:16 PM INFO: Enter ticket id
+5/9/2023 8:45:18 PM INFO: User Input: dm-idx-nimish-v003
+5/9/2023 8:45:18 PM INFO: Executing Execute Renamae Script for env DEV, IndexName: dm-idx-nimish-v003, TicketId 1111
+5/9/2023 8:45:18 PM INFO: Enter confirm to proceed
+5/9/2023 8:45:21 PM INFO: User Input: confirm
+5/9/2023 8:45:21 PM INFO: taking backup for index: dm-idx-nimish-v003. TicketId 1111. snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192619215250355_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:45:24 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:25 PM INFO: Current status: SUCCESS
+5/9/2023 8:45:25 PM INFO: response object: {"snapshots":[{"snapshot":"backup_638192619215250355_dm-idx-nimish-v003-gbsrch-1111","state":"SUCCESS","indices":{"dm-idx-nimish-v003":{"shards_stats":{"initializing":0,"started":0,"finalizing":0,"done":1,"failed":0,"total":1},"stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683645323595,"time_in_millis":0},"shards":{"0":{"stage":"DONE","stats":{"incremental":{"file_count":4,"size_in_bytes":44912},"total":{"file_count":4,"size_in_bytes":44912},"start_time_in_millis":1683645323595,"time_in_millis":0}}}}}}]}
+5/9/2023 8:45:26 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:26 PM INFO: snapshotUrl: https://leo-dev-azure-eastus.es.eastus.azure.elastic-cloud.com:9243/_snapshot/leo_dev_snapshots/backup_638192619215250355_dm-idx-nimish-v003-gbsrch-1111?wait_for_completion=true
+5/9/2023 8:45:26 PM INFO: Backups is taken: dm-idx-nimish-v003. TicketId 1111
+5/9/2023 8:45:26 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:26 PM INFO: Creating backup index: dm-idx-nimish-v0031111
+5/9/2023 8:45:26 PM INFO: Creating Index: dm-idx-nimish-v0031111
+5/9/2023 8:45:27 PM INFO: Created Index: dm-idx-nimish-v0031111
+5/9/2023 8:45:27 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:27 PM INFO: Reindexing data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:45:27 PM INFO: Straing Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111. TaskId: jCT4dATpSXmAWpL8-7KzGg:409878005
+5/9/2023 8:45:28 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 8:45:28 PM WARN: Total 0
+5/9/2023 8:45:28 PM WARN: Created 0
+5/9/2023 8:45:28 PM WARN: Updated 0
+5/9/2023 8:45:28 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:29 PM INFO: Reindexing from dm-idx-nimish-v003 -> dm-idx-nimish-v0031111
+5/9/2023 8:45:29 PM WARN: Total 2
+5/9/2023 8:45:29 PM WARN: Created 2
+5/9/2023 8:45:29 PM WARN: Updated 0
+5/9/2023 8:45:29 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:30 PM WARN: Reindexed data from dm-idx-nimish-v003 to dm-idx-nimish-v0031111
+5/9/2023 8:45:30 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:49 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:50 PM INFO: Aliases and Mappings: "{\"dm-idx-nimish-v003\":{\"aliases\":{},\"mappings\":{\"_meta\":{\"esMetadata\":{\"esTemplateVersion\":\"1.2\",\"esDocType\":\"domainmodel_template\",\"esTemplateName\":\"default_domainmodel_template\"}}}}}"
+5/9/2023 8:45:50 PM WARN: Deleting index: dm-idx-nimish-v003
+5/9/2023 8:45:51 PM WARN: Deleted index: dm-idx-nimish-v003
+5/9/2023 8:45:51 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:51 PM INFO: Creating Index: dm-idx-nimish-v003
+5/9/2023 8:45:52 PM INFO: Created Index: dm-idx-nimish-v003
+5/9/2023 8:45:52 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:52 PM INFO: Executing Rename script for index: dm-idx-nimish-v003
+5/9/2023 8:45:52 PM INFO: Reindexing script is: {"source": {"index": "dm-idx-nimish-v0031111"}, "dest": {"index": "dm-idx-nimish-v003"}, "script": {
+    "source": 
+  "
+  def renameFields(def doc, String field, String newField)
+  {
+    String log = \"\";
+    log = log + \" |1| Inside renameField function, old field: \"+ field + \" and new field \" + newField;
+    String[] fieldTokens = field.splitOnToken(\".\");
+    String[] newFieldTokens = newField.splitOnToken(\".\");
+    for (int i = 0; i < fieldTokens.length; i++) 
+		{
+		  String currentField = fieldTokens[i];
+		  log = log + \" |2| Inside for loop for field: \" + currentField + \" i: \" + i + \" fieldTokens length: \" + fieldTokens.length ;
+		  if (i == fieldTokens.length - 1) 
+      {
+        log = log + \" |3| field token -1 condition for field: \" + currentField;
+        String f = fieldTokens[fieldTokens.length - 1];
+        log = log + \" |4| doc is\" +  \"field is \"+ f ;
+        if (doc[f] != null) 
+        {
+          log = log + \" |5| field is present in the document for field: \" + currentField;
+          def value = doc[currentField];
+          doc[newFieldTokens[newFieldTokens.length - 1]] = value;
+          doc.remove(currentField);
+          return log;
+        }
+      }
+      else
+      {
+        def nestedObject = doc[currentField];
+        if (nestedObject == null) 
+        {
+          log = log + \" |6| Returnning as nested object is null for field: \" + currentField;
+          return log;
+        }
+        String fieldTokens1 =fieldTokens[i+1];  //\"\"; //
+        int k = 2;
+        int counter = i;
+        String newfieldTokens1 = newFieldTokens[i+1];//\"\"; //newFieldTokens[i+1];
+        counter++;
+        while(counter < fieldTokens.length -1 )
+        {
+          fieldTokens1 = fieldTokens1 + \".\" +  fieldTokens[counter+1];
+          newfieldTokens1 = newfieldTokens1 + \".\" +  newFieldTokens[counter+1];
+          counter++;
+        }
+        log = log + \" |7| fieldTokens1 are: \" + fieldTokens1 +  \" newfieldTokens1 are: \" + newfieldTokens1;
+        if (nestedObject instanceof List) 
+        {
+         log = log + \" |8| Inside if condition as current obj is nested type for field: \" + currentField;
+          for (int j = 0; j < nestedObject.length; j++) 
+          {
+            log = log + renameFields(nestedObject[j], fieldTokens1, newfieldTokens1);
+          }
+          return log;
+        }
+        if (nestedObject instanceof Map) 
+        {
+          log = log + \" |9| Inside if condition as current obj is map type for field: \" + currentField;
+          log = log + renameFields(nestedObject, fieldTokens1, newfieldTokens1);
+           return log;
+        }
+      }
+		}
+    return log;
+  }
+  String renameLog = \"\";
+  String log = \"\";
+  for (int i = 0; i < params.renames.size() ; i++ ) 
+  {
+    def doc = ctx._source;
+    log = log + \"| INFO: Script started\" + i;
+    renameLog = renameLog + renameFields(doc, params.renames[i].oldField.toString(),  params.renames[i].newField.toString());
+  }
+  ",
+    "params": {
+      "renames": [
+         { "oldField": "kwd$name", "newField": "gst$name" },
+         { "oldField": "arr$milestones", "newField": "nst$milestones" },
+         { "oldField": "obj$updatedby.gst$lastname", "newField": "obj$updatedby.kwd$lastname" },
+         { "oldField": "arr$supplier.gst$legalcompanyname", "newField": "arr$supplier.kwd$legalcompanyname" },
+         { "oldField": "obj$updatedby.arr$supplier.gst$smartpartnercode", "newField": "obj$updatedby.arr$supplier.kwd$smartpartnercode" },
+         { "oldField": "arr$supplier.obj$updatedby.gst$firstname", "newField": "arr$supplier.obj$updatedby.kwd$firstname" },
+         { "oldField": "arr$supplier.obj$updatedby.arr$supplier.gst$partnercode", "newField": "arr$supplier.obj$updatedby.arr$supplier.adf$partnercode" }
+         
+      ]
+    }
+}}. Will be executed on the environment: DEV. Enter confirm to proceed
+5/9/2023 8:45:55 PM INFO: User Input: confirm
+5/9/2023 8:45:55 PM INFO: Continuing the execution
+5/9/2023 8:45:55 PM INFO: Reindexing data from dm-idx-nimish-v0031111 to dm-idx-nimish-v003
+5/9/2023 8:45:55 PM INFO: Straing Reindexing from dm-idx-nimish-v0031111 -> dm-idx-nimish-v003. TaskId: jCT4dATpSXmAWpL8-7KzGg:409883435
+5/9/2023 8:45:56 PM INFO: Reindexing from dm-idx-nimish-v0031111 -> dm-idx-nimish-v003
+5/9/2023 8:45:56 PM WARN: Total 2
+5/9/2023 8:45:56 PM WARN: Created 2
+5/9/2023 8:45:56 PM WARN: Updated 0
+5/9/2023 8:45:56 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:57 PM WARN: Reindexed data from dm-idx-nimish-v0031111 to dm-idx-nimish-v003
+5/9/2023 8:45:57 PM INFO: Rename script is excuted for index: dm-idx-nimish-v003
+5/9/2023 8:45:57 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:57 PM INFO: ------------------------------------------------------------------------------------------------------------------------------------------------
+5/9/2023 8:45:57 PM INFO: Select operation ny entering number
+5/9/2023 8:45:57 PM INFO: 1. Update Template
+5/9/2023 8:45:57 PM INFO: 2. Rename fields
+5/9/2023 8:45:57 PM ERROR: 9. Exit!
