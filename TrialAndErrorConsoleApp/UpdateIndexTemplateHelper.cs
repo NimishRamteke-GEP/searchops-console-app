@@ -40,13 +40,13 @@ namespace TrialAndErrorConsoleApp
                     {
                         Logger.LogMessage(LogLevel.ERROR, $"Version is not present for current index: {indexName}. Hence skipping reindexing.");
                         continue;
-                        //throw new Exception("Version is not present for current Index");
+                        throw new Exception("Version is not present for current Index");
                     }
 
                     if (currentVersion.Equals(version))
                     {
                         Logger.LogMessage(LogLevel.WARN, $"Index: {indexName} has current version: {currentVersion} which is equal to update version: {version}. Hence skiping the reindexing.");
-                        //continue;
+                        continue;
                     }
 
                     Logger.LogMessage(LogLevel.WARN, $"Index: {indexName} has current version: {currentVersion} which is not equal to update version: {version}. Hence doing the reindexing.");
@@ -57,7 +57,7 @@ namespace TrialAndErrorConsoleApp
                     Logger.PrintDivider();
                     Logger.LogMessage(LogLevel.INFO, $"Executing script for index: {indexName}");
 
-                    string backupIndexName = $"{indexName}backup";
+                    string backupIndexName = $"{indexName}3414";
                     if (docCount == 0)
                     {
                         Logger.LogMessage(LogLevel.WARN, $"Skipping reindexing as document count is {docCount}");

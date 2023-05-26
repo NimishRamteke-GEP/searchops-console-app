@@ -29,7 +29,7 @@ namespace TrialAndErrorConsoleApp
             await _indexManager.TakeSnapShot(indexName, ticketId);
             Logger.PrintDivider();
             long tick = DateTime.Now.Ticks;
-            string backupIndexName = $"{indexName}_automation_{tick}{ticketId}";
+            string backupIndexName = $"{indexName}k_automation_{tick}{ticketId}";
             Logger.LogMessage(LogLevel.INFO, $"Creating backup index: {backupIndexName}");
 
             await _indexManager.CreateIndex(backupIndexName, "");

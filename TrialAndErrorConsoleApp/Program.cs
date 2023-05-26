@@ -66,7 +66,7 @@ namespace ElasticSearchIndexManagement
 
             var indexList = new List<string>
             {
-               "dm-idx-asnv2-v001"
+            "dm-idx-nimish-v003"
 
             };
 
