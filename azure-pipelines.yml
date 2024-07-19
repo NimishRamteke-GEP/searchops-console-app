@@ -20,8 +20,10 @@ steps:
     Write-Output ("##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount")
     Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
   displayName: 'Set Deployment Record Count'
+  name: 'count'
 
 - powershell: |
     $deploymentrecordcount = $env:deploymentrecordcount
     Write-Host "Deployment Record Count in subsequent task: $deploymentrecordcount"
+    echo $(count)
   displayName: 'Use Deployment Record Count'
