@@ -29,6 +29,9 @@ steps:
     } else {
         Write-Host "Environment variable deploymentrecordcount is not set"
     }
-    echo $deploymentrecordcount
-    echo $count
+    echo "before printing"
+    echo "Count is: $deploymentrecordcount"
+    echo "Count varuable is: $count"
+    echo "env is $env"
+    echo "after printing"
   displayName: 'Use Deployment Record Count'
