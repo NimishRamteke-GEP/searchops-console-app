@@ -41,24 +41,47 @@ variables:
 #     echo "after printing"
 #   displayName: 'Use Deployment Record Count'
 
+steps:
 
-jobs:
-  # Set an output variable from job A
-  - job: A
-    steps:
-    - script: |
-        #!/bin/bash        
-        echo "##vso[task.setvariable variable=myvar1;isOutput=true]True"
-        echo "##vso[task.setvariable variable=myvar2;isOutput=true]hello"
-      name: setvarStep
-  # Map the variable into job B
-  - job: B
-    dependsOn: A
-    variables:
-      myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myvar1'] ]  
-      myVarFromJobA1: $[ dependencies.A.outputs['setvarStep.myvar2'] ]  
-    steps:
-    - script: echo $(myVarFromJobA)
-      name: echovar
-    - script: echo $(myVarFromJobA1)
-      name: echovar1
+- powershell: |
+    function Logstash_Mapping{ Param ([Parameter(Mandatory = $true)][string]$deploymentrecordcount)
+      #Write-Output ("##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount")
+      Write-Host "##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount"
+      echo "deploymentrecordcount: $deploymentrecordcount";
+      Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
+    }
+    Logstash_Mapping -deploymentrecordcount 10
+  name: countVar
+  displayName: 'Set Deployment Record Count'
+  
+
+- powershell: |
+    echo " In 2nd script";
+    echo: $(countVar.deploymentrecordcount)
+    echo "value: $(countVar.deploymentrecordcount)"
+    # Write-Host "Reading environment variable deploymentrecordcount..."
+    # if ($env:deploymentrecordcount) {
+    #     Write-Host "Deployment Record Count in subsequent task: $env:deploymentrecordcount"
+    # } else {
+    #     Write-Host "Environment variable deploymentrecordcount is not set"
+    # }
+    # echo "before printing"
+    # echo "Count is: $deploymentrecordcount"
+    # echo "Count varuable is: $setvarStep"
+    # echo "env is $env"
+    # echo "after printing"
+  displayName: 'Use Deployment Record Count'
+
+# - task: PowerShell@2
+#   name: 'SetVal2'
+#   inputs:
+#     targetType: 'inline'
+#     script: |
+#       $setvalue = "111"
+#       Write-Host "##vso[task.setvariable variable=setvalue;isOutput=true]$setvalue"
+
+# - task: PowerShell@2
+#   name: 'UseVal2' 
+#   inputs:
+#     targetType: 'inline'
+#     script: 'Write-Host The value of setvalue is $(SetVal2.setvalue)'
