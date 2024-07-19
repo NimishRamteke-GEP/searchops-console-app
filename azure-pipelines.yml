@@ -16,6 +16,11 @@ variables:
 
 steps:
 - powershell: |
+    function Logstash_Mapping{ Param ([Parameter(Mandatory = $true)][string]$Workingfolder)
+      echo "Workingfolder: $Workingfolder";
+    }
+    Logstash_Mapping -Workingfolder 10
+
     $deploymentrecordcount = 5
     Write-Output ("##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount")
     Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
