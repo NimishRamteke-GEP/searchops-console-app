@@ -50,7 +50,7 @@ steps:
       echo "deploymentrecordcount: $deploymentrecordcount";
       Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
     }
-    Logstash_Mapping -deploymentrecordcount 10
+    Logstash_Mapping -deploymentrecordcount 20
   name: countVar
   displayName: 'Set Deployment Record Count'
   
