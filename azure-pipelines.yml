@@ -14,28 +14,51 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-steps:
-- powershell: |
-    function Logstash_Mapping{ Param ([Parameter(Mandatory = $true)][string]$deploymentrecordcount)
-      Write-Output ("##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount")
-      echo "deploymentrecordcount: $deploymentrecordcount";
-      Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
-    }
-    Logstash_Mapping -deploymentrecordcount 10
+# steps:
 
-  displayName: 'Set Deployment Record Count'
-  name: 'count'
+# - powershell: |
+#     function Logstash_Mapping{ Param ([Parameter(Mandatory = $true)][string]$deploymentrecordcount)
+#       Write-Output ("##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount")
+#       echo "deploymentrecordcount: $deploymentrecordcount";
+#       Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
+#     }
+#     Logstash_Mapping -deploymentrecordcount 10
 
-- powershell: |
-    Write-Host "Reading environment variable deploymentrecordcount..."
-    if ($env:deploymentrecordcount) {
-        Write-Host "Deployment Record Count in subsequent task: $env:deploymentrecordcount"
-    } else {
-        Write-Host "Environment variable deploymentrecordcount is not set"
-    }
-    echo "before printing"
-    echo "Count is: $deploymentrecordcount"
-    echo "Count varuable is: $count"
-    echo "env is $env"
-    echo "after printing"
-  displayName: 'Use Deployment Record Count'
+#   displayName: 'Set Deployment Record Count'
+#   name: setvarStep
+
+# - powershell: |
+#     Write-Host "Reading environment variable deploymentrecordcount..."
+#     if ($env:deploymentrecordcount) {
+#         Write-Host "Deployment Record Count in subsequent task: $env:deploymentrecordcount"
+#     } else {
+#         Write-Host "Environment variable deploymentrecordcount is not set"
+#     }
+#     echo "before printing"
+#     echo "Count is: $deploymentrecordcount"
+#     echo "Count varuable is: $setvarStep"
+#     echo "env is $env"
+#     echo "after printing"
+#   displayName: 'Use Deployment Record Count'
+
+
+jobs:
+  # Set an output variable from job A
+  - job: A
+    steps:
+    - script: |
+        #!/bin/bash        
+        echo "##vso[task.setvariable variable=myvar1;isOutput=true]True"
+        echo "##vso[task.setvariable variable=myvar2;isOutput=true]hello"
+      name: setvarStep
+  # Map the variable into job B
+  - job: B
+    dependsOn: A
+    variables:
+      myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myvar1'] ]  
+      myVarFromJobA1: $[ dependencies.A.outputs['setvarStep.myvar2'] ]  
+    steps:
+    - script: echo $(myVarFromJobA)
+      name: echovar
+    - script: echo $(myVarFromJobA1)
+      name: echovar1
