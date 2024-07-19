@@ -15,20 +15,13 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: NuGetToolInstaller@1
+- powershell: |
+    $deploymentrecordcount = 5
+    Write-Output ("##vso[task.setvariable variable=deploymentrecordcount;isOutput=true]$deploymentrecordcount")
+    Write-Host "Set deploymentrecordcount to $deploymentrecordcount"
+  displayName: 'Set Deployment Record Count'
 
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
-
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+- powershell: |
+    $deploymentrecordcount = $env:deploymentrecordcount
+    Write-Host "Deployment Record Count in subsequent task: $deploymentrecordcount"
+  displayName: 'Use Deployment Record Count'
