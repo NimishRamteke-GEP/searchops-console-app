@@ -57,7 +57,7 @@ steps:
 
 - powershell: |
     echo " In 2nd script";
-    echo: $(countVar.deploymentrecordcount)
+    echo $(countVar.deploymentrecordcount)
     echo "value: $(countVar.deploymentrecordcount)"
     # Write-Host "Reading environment variable deploymentrecordcount..."
     # if ($env:deploymentrecordcount) {
