@@ -23,7 +23,12 @@ steps:
   name: 'count'
 
 - powershell: |
-    $deploymentrecordcount = $env:deploymentrecordcount
-    Write-Host "Deployment Record Count in subsequent task: $deploymentrecordcount"
-    echo $(count)
+    Write-Host "Reading environment variable deploymentrecordcount..."
+    if ($env:deploymentrecordcount) {
+        Write-Host "Deployment Record Count in subsequent task: $env:deploymentrecordcount"
+    } else {
+        Write-Host "Environment variable deploymentrecordcount is not set"
+    }
+    echo $deploymentrecordcount
+    echo $count
   displayName: 'Use Deployment Record Count'
